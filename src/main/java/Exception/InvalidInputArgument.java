@@ -1,5 +1,7 @@
 package Exception;
 
+import DS.Tree.BinaryTree.BinaryTree;
+
 public class InvalidInputArgument extends Exception {
     public InvalidInputArgument(int[] input) throws Exception {
         if (null == input){
@@ -16,6 +18,12 @@ public class InvalidInputArgument extends Exception {
         }
         if (input.length() == 0){
             throw new Exception("InvalidInputArgument, empty string");
+        }
+    }
+
+    public InvalidInputArgument(BinaryTree input) throws Exception {
+        if (null == input){
+            throw new Exception("InvalidInputArgument, input BinaryTree=null");
         }
     }
 }

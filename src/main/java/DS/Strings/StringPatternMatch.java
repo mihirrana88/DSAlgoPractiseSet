@@ -103,12 +103,18 @@ public class StringPatternMatch {
     private int[] getLpsFromInputString(){
         int[] lps = new int[pattern.length()];
         int i = 0;
-        for(int j=1; j<pattern.length(); j++){
+        int j = 1;
+        while(j<pattern.length()){
             if(pattern.charAt(i) == pattern.charAt(j)){
-                lps[j] = lps[j-1]+1;
+                lps[j] = i+1;
                 i++;
+                j++;
             }else{
-                i = lps[lps[j-1]];
+                if(i != 0){
+                    i = lps[i-1];
+                }else {
+                    j++;
+                }
             }
         }
         return lps;

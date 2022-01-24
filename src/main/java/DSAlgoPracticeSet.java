@@ -2,6 +2,10 @@ import DS.Arrays.MajorityElementInArray;
 import DS.Arrays.MaxSumSubArray;
 import DS.Arrays.StockBuyAndSellV1;
 import DS.Strings.StringPatternMatch;
+import DS.Tree.BinaryTree.BinaryTree;
+import DS.Tree.BinaryTree.InOrderTraversalBinaryTree;
+import DS.Tree.BinaryTree.PostOrderTraversalBinaryTree;
+import DS.Tree.BinaryTree.PreOrderTraversalBinaryTree;
 
 import java.lang.*;
 import java.util.*;
@@ -12,12 +16,17 @@ public class DSAlgoPracticeSet {
         Scanner scanner = new Scanner(System.in);
 
         // #Arrays
-        maxSumSubArray(scanner);
-        majorityElementInArray(scanner);
-        stockBuyAndSellV1(scanner);
+        //maxSumSubArray(scanner);
+        //majorityElementInArray(scanner);
+        //stockBuyAndSellV1(scanner);
 
         // #Strings
-        stringPatternMatch(scanner);
+        //stringPatternMatch(scanner);
+
+        // #Trees ==> BinaryTree
+        preOrderTraversalOfBinaryTree(scanner);
+        inOrderTraversalOfBinaryTree(scanner);
+        postOrderTraversalOfBinaryTree(scanner);
     }
 
     public static void maxSumSubArray(Scanner scanner) throws Exception {
@@ -150,5 +159,134 @@ public class DSAlgoPracticeSet {
         }
         System.out.println("Output Time Complexity:- O(N)");
         System.out.println("Output Space Complexity:- O(N)");
+    }
+
+    public static void preOrderTraversalOfBinaryTree(Scanner scanner) throws Exception {
+        System.out.println("Starting Preorder traversal in BinaryTree Problem...");
+        System.out.println();
+        System.out.print("Provide an input array representation of BinaryTree:- ");
+
+        String inputString = scanner.nextLine();
+        String[] inputArray = inputString.split("\\s+");
+        Integer[] arrayRepresentationOfBinaryTree = new Integer[inputArray.length];
+        int i = 0;
+
+        for(String input : inputArray){
+            if(input.equalsIgnoreCase("null")){
+                arrayRepresentationOfBinaryTree[i] = null;
+            }else {
+                arrayRepresentationOfBinaryTree[i] = Integer.valueOf(input);
+            }
+            i++;
+        }
+
+        BinaryTree inputBinaryTree = new BinaryTree();
+        inputBinaryTree.createBinaryTree(arrayRepresentationOfBinaryTree);
+
+        PreOrderTraversalBinaryTree preOrderTraversalBinaryTree = new PreOrderTraversalBinaryTree();
+        preOrderTraversalBinaryTree.acceptBinaryTreeInput(inputBinaryTree);
+
+        System.out.println();
+
+        System.out.print("Input is:- ");
+        for (String s : inputArray){
+            System.out.print(s+" ");
+        }
+
+        System.out.println();
+
+        System.out.print("Output is:- ");
+        preOrderTraversalBinaryTree.preOrderTraversalInBinaryTree();
+
+        System.out.println();
+
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(H)");
+    }
+
+    public static void inOrderTraversalOfBinaryTree(Scanner scanner) throws Exception {
+        System.out.println("Starting Preorder traversal in BinaryTree Problem...");
+        System.out.println();
+        System.out.print("Provide an input array representation of BinaryTree:- ");
+
+        String inputString = scanner.nextLine();
+        String[] inputArray = inputString.split("\\s+");
+        Integer[] arrayRepresentationOfBinaryTree = new Integer[inputArray.length];
+        int i = 0;
+
+        for(String input : inputArray){
+            if(input.equalsIgnoreCase("null")){
+                arrayRepresentationOfBinaryTree[i] = null;
+            }else {
+                arrayRepresentationOfBinaryTree[i] = Integer.valueOf(input);
+            }
+            i++;
+        }
+
+        BinaryTree inputBinaryTree = new BinaryTree();
+        inputBinaryTree.createBinaryTree(arrayRepresentationOfBinaryTree);
+
+        InOrderTraversalBinaryTree inOrderTraversalBinaryTree = new InOrderTraversalBinaryTree();
+        inOrderTraversalBinaryTree.acceptBinaryTreeInput(inputBinaryTree);
+
+        System.out.println();
+
+        System.out.print("Input is:- ");
+        for (String s : inputArray){
+            System.out.print(s+" ");
+        }
+
+        System.out.println();
+
+        System.out.print("Output is:- ");
+        inOrderTraversalBinaryTree.inOrderTraversalInBinaryTree();
+
+        System.out.println();
+
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(H)");
+    }
+
+    public static void postOrderTraversalOfBinaryTree(Scanner scanner) throws Exception {
+        System.out.println("Starting Preorder traversal in BinaryTree Problem...");
+        System.out.println();
+        System.out.print("Provide an input array representation of BinaryTree:- ");
+
+        String inputString = scanner.nextLine();
+        String[] inputArray = inputString.split("\\s+");
+        Integer[] arrayRepresentationOfBinaryTree = new Integer[inputArray.length];
+        int i = 0;
+
+        for(String input : inputArray){
+            if(input.equalsIgnoreCase("null")){
+                arrayRepresentationOfBinaryTree[i] = null;
+            }else {
+                arrayRepresentationOfBinaryTree[i] = Integer.valueOf(input);
+            }
+            i++;
+        }
+
+        BinaryTree inputBinaryTree = new BinaryTree();
+        inputBinaryTree.createBinaryTree(arrayRepresentationOfBinaryTree);
+
+        PostOrderTraversalBinaryTree postOrderTraversalBinaryTree = new PostOrderTraversalBinaryTree();
+        postOrderTraversalBinaryTree.acceptBinaryTreeInput(inputBinaryTree);
+
+        System.out.println();
+
+        System.out.print("Input is:- ");
+        for (String s : inputArray){
+            System.out.print(s+" ");
+        }
+
+        System.out.println();
+
+        System.out.print("Output is:- ");
+        postOrderTraversalBinaryTree.postOrderTraversalInBinaryTree();
+
+        System.out.println();
+
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(H)");
     }
 }
