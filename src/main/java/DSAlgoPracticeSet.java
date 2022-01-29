@@ -22,6 +22,6 @@ public class DSAlgoPracticeSet {
         //Problem.leftViewOfBinaryTree(scanner);
         //Problem.rightViewOfBinaryTree(scanner);
         //Problem.topViewOfBinaryTree(scanner);
-        //Problem.bottomViewOfBinaryTree(scanner);
+        Problem.bottomViewOfBinaryTree(scanner);
     }
 }
