@@ -1,6 +1,7 @@
 import DS.Arrays.MajorityElementInArray;
 import DS.Arrays.MaxSumSubArray;
 import DS.Arrays.StockBuyAndSellV1;
+import DS.Arrays.StockBuyAndSellV2;
 import DS.Strings.StringPatternMatch;
 import DS.Tree.BinaryTree.*;
 
@@ -87,6 +88,34 @@ public class Problem {
         System.out.println();
 
         System.out.println("Output is:- "+stockBuyAndSellV1.getMaximumProfitPossible());
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(1)");
+    }
+
+    public static void stockBuyAndSellV2(Scanner scanner) throws Exception {
+        System.out.println("Starting StockBuysAndSellV2 Problem...");
+        System.out.print("Provide length of input:- ");
+
+        int inputLength = scanner.nextInt();
+        StockBuyAndSellV2 stockBuyAndSellV2 = new StockBuyAndSellV2();
+        stockBuyAndSellV2.getInputLength(inputLength);
+
+        System.out.print("Provide an input array:- ");
+        for(int i=0; i<inputLength; i++){
+            int num = scanner.nextInt();
+            stockBuyAndSellV2.acceptInput(num, i);
+        }
+
+        System.out.println();
+
+        System.out.print("Input is:- ");
+        for (int num : stockBuyAndSellV2.nums){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+        System.out.println("Output is:- "+stockBuyAndSellV2.getMaximumProfitPossible());
         System.out.println("Output Time Complexity:- O(N)");
         System.out.println("Output Space Complexity:- O(1)");
     }

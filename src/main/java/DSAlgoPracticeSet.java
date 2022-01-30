@@ -10,6 +10,7 @@ public class DSAlgoPracticeSet {
         //Problem.maxSumSubArray(scanner);
         //Problem.majorityElementInArray(scanner);
         //Problem.stockBuyAndSellV1(scanner);
+        Problem.stockBuyAndSellV2(scanner);
 
         // #Strings
         //Problem.stringPatternMatch(scanner);
@@ -22,6 +23,6 @@ public class DSAlgoPracticeSet {
         //Problem.leftViewOfBinaryTree(scanner);
         //Problem.rightViewOfBinaryTree(scanner);
         //Problem.topViewOfBinaryTree(scanner);
-        Problem.bottomViewOfBinaryTree(scanner);
+        //Problem.bottomViewOfBinaryTree(scanner);
     }
 }
