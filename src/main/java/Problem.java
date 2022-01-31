@@ -1,4 +1,5 @@
 import DS.Arrays.*;
+import DS.HashMap.DistinctCountInKSizeWindow;
 import DS.Strings.StringPatternMatch;
 import DS.Tree.BinaryTree.*;
 
@@ -143,6 +144,48 @@ public class Problem {
         System.out.println("Output is:- "+rainwaterTrapping.getMaximumWaterCanBeTrapped());
         System.out.println("Output Time Complexity:- O(N)");
         System.out.println("Output Space Complexity:- O(1)");
+    }
+
+    public static void distinctCountInKSizeWindow(Scanner scanner) throws Exception {
+        System.out.println("Starting Distinct Element Count in K size window Problem...");
+        System.out.print("Provide length of input:- ");
+
+        int inputLength = scanner.nextInt();
+
+        System.out.print("Provide length of window k:- ");
+
+        int windowSize = scanner.nextInt();
+
+        DistinctCountInKSizeWindow distinctCountInKSizeWindow = new DistinctCountInKSizeWindow();
+        distinctCountInKSizeWindow.getInputLength(inputLength);
+        distinctCountInKSizeWindow.getWindowSize(windowSize);
+
+        System.out.print("Provide an input array:- ");
+        for(int i=0; i<inputLength; i++){
+            int num = scanner.nextInt();
+            distinctCountInKSizeWindow.acceptInput(num, i);
+        }
+
+        System.out.println();
+
+        System.out.print("Input is:- ");
+        for (int num : distinctCountInKSizeWindow.nums){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+        System.out.println("Given size of window is k:- "+windowSize);
+
+        System.out.println();
+
+        System.out.print("Output is:- ");
+        distinctCountInKSizeWindow.getDistinctCountInKSizeWindow();
+
+        System.out.println();
+
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(N)");
     }
 
     public static void stringPatternMatch(Scanner scanner) throws Exception {

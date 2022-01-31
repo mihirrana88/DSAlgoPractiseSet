@@ -11,7 +11,10 @@ public class DSAlgoPracticeSet {
         //Problem.majorityElementInArray(scanner);
         //Problem.stockBuyAndSellV1(scanner);
         //Problem.stockBuyAndSellV2(scanner);
-        Problem.rainWaterTrapping(scanner);
+        //Problem.rainWaterTrapping(scanner);
+
+        // #HashMap
+        Problem.distinctCountInKSizeWindow(scanner);
 
         // #Strings
         //Problem.stringPatternMatch(scanner);
