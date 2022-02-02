@@ -1,5 +1,6 @@
 import DS.Arrays.*;
 import DS.HashMap.DistinctCountInKSizeWindow;
+import DS.Strings.LongestSubstring;
 import DS.Strings.StringPatternMatch;
 import DS.Tree.BinaryTree.*;
 
@@ -260,6 +261,25 @@ public class Problem {
                     +" index starting from "+patternMatchedFromIndex
                     +" to "+(patternToBeMatched.length()+patternMatchedFromIndex));
         }
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(N)");
+    }
+
+    public static void longestSubstringWithoutRepeatingCharacter(Scanner scanner) throws Exception {
+        System.out.println("Starting Longest Substring Without Repeating Character Problem...");
+        System.out.println();
+        System.out.print("Provide a input String:- ");
+        String inputString = scanner.nextLine();
+        System.out.println();
+
+        LongestSubstring longestSubstring = new LongestSubstring();
+        longestSubstring.acceptInputString(inputString);
+
+        System.out.println();
+        System.out.println();
+
+        System.out.println("Output:Length of Longest Substring:- "+longestSubstring
+                .getLongestSubstringWithoutRepeatingCharacter());
         System.out.println("Output Time Complexity:- O(N)");
         System.out.println("Output Space Complexity:- O(N)");
     }

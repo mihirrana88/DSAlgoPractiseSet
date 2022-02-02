@@ -12,13 +12,14 @@ public class DSAlgoPracticeSet {
         //Problem.stockBuyAndSellV1(scanner);
         //Problem.stockBuyAndSellV2(scanner);
         //Problem.rainWaterTrapping(scanner);
-        Problem.removeDuplicatesFromSortedArray(scanner);
+        //Problem.removeDuplicatesFromSortedArray(scanner);
 
         // #HashMap
         //Problem.distinctCountInKSizeWindow(scanner);
 
         // #Strings
         //Problem.stringPatternMatch(scanner);
+        Problem.longestSubstringWithoutRepeatingCharacter(scanner);
 
         // #Trees ==> BinaryTree
         //Problem.preOrderTraversalOfBinaryTree(scanner);
