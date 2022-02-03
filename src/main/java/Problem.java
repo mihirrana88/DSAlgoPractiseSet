@@ -1,5 +1,6 @@
 import DS.Arrays.*;
 import DS.HashMap.DistinctCountInKSizeWindow;
+import DS.Strings.AllAnagramsInString;
 import DS.Strings.LongestSubstring;
 import DS.Strings.StringPatternMatch;
 import DS.Tree.BinaryTree.*;
@@ -263,6 +264,32 @@ public class Problem {
         }
         System.out.println("Output Time Complexity:- O(N)");
         System.out.println("Output Space Complexity:- O(N)");
+    }
+
+    public static void allAnagramsFromString(Scanner scanner) throws Exception {
+        System.out.println("Starting Find All Anagrams from String Problem...");
+        System.out.println();
+        System.out.print("Provide a input String:- ");
+        String inputString = scanner.nextLine();
+        System.out.println();
+        System.out.print("Provide a string to be anagram with:- ");
+        String anagramWith = scanner.nextLine();
+
+        AllAnagramsInString allAnagramsInString = new AllAnagramsInString();
+        allAnagramsInString.acceptInputString(inputString);
+        allAnagramsInString.acceptInputAnagramWith(anagramWith);
+
+        System.out.println();
+
+        System.out.print("Output:- ");
+        for (int startIndex : allAnagramsInString.getAllAnagramsInString()){
+            System.out.print(startIndex+" ");
+        }
+
+        System.out.println();
+
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(1)");
     }
 
     public static void longestSubstringWithoutRepeatingCharacter(Scanner scanner) throws Exception {

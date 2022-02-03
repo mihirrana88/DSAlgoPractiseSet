@@ -19,7 +19,8 @@ public class DSAlgoPracticeSet {
 
         // #Strings
         //Problem.stringPatternMatch(scanner);
-        Problem.longestSubstringWithoutRepeatingCharacter(scanner);
+        //Problem.longestSubstringWithoutRepeatingCharacter(scanner);
+        Problem.allAnagramsFromString(scanner);
 
         // #Trees ==> BinaryTree
         //Problem.preOrderTraversalOfBinaryTree(scanner);
