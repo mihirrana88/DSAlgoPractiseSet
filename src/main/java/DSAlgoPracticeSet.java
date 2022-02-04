@@ -13,6 +13,7 @@ public class DSAlgoPracticeSet {
         //Problem.stockBuyAndSellV2(scanner);
         //Problem.rainWaterTrapping(scanner);
         //Problem.removeDuplicatesFromSortedArray(scanner);
+        Problem.twoSumArray(scanner);
 
         // #HashMap
         //Problem.distinctCountInKSizeWindow(scanner);
@@ -20,7 +21,7 @@ public class DSAlgoPracticeSet {
         // #Strings
         //Problem.stringPatternMatch(scanner);
         //Problem.longestSubstringWithoutRepeatingCharacter(scanner);
-        Problem.allAnagramsFromString(scanner);
+        //Problem.allAnagramsFromString(scanner);
 
         // #Trees ==> BinaryTree
         //Problem.preOrderTraversalOfBinaryTree(scanner);

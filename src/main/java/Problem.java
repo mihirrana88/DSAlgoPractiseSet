@@ -120,6 +120,46 @@ public class Problem {
         System.out.println("Output Space Complexity:- O(1)");
     }
 
+    public static void twoSumArray(Scanner scanner) throws Exception {
+        System.out.println("Starting Two Sum Array Problem...");
+        System.out.print("Provide length of input:- ");
+
+        int inputLength = scanner.nextInt();
+
+        System.out.print("Provide target sum:- ");
+
+        int targetSum = scanner.nextInt();
+
+        TwoSumArray twoSumArray = new TwoSumArray();
+        twoSumArray.getInputLength(inputLength);
+        twoSumArray.getTargetSum(targetSum);
+
+        System.out.print("Provide an input array:- ");
+        for(int i=0; i<inputLength; i++){
+            int num = scanner.nextInt();
+            twoSumArray.acceptInput(num, i);
+        }
+
+        System.out.println();
+
+        System.out.print("Input is:- ");
+        for (int num : twoSumArray.nums){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+        System.out.print("Output is:- ");
+        for (int num : twoSumArray.getTwoSumArray()){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(N)");
+    }
+
     public static void rainWaterTrapping(Scanner scanner) throws Exception {
         System.out.println("Starting Rainwater Trapping Problem...");
         System.out.print("Provide length of input:- ");
