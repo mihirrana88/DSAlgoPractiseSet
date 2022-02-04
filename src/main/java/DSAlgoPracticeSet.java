@@ -13,7 +13,8 @@ public class DSAlgoPracticeSet {
         //Problem.stockBuyAndSellV2(scanner);
         //Problem.rainWaterTrapping(scanner);
         //Problem.removeDuplicatesFromSortedArray(scanner);
-        Problem.twoSumArray(scanner);
+        //Problem.twoSumArray(scanner);
+        Problem.moveZerosToEnd(scanner);
 
         // #HashMap
         //Problem.distinctCountInKSizeWindow(scanner);
