@@ -3,6 +3,7 @@ import DS.HashMap.DistinctCountInKSizeWindow;
 import DS.Strings.AllAnagramsInString;
 import DS.Strings.LongestSubstring;
 import DS.Strings.StringPatternMatch;
+import DS.Strings.ValidParentheses;
 import DS.Tree.BinaryTree.*;
 
 import java.util.Scanner;
@@ -382,6 +383,24 @@ public class Problem {
 
         System.out.println("Output:Length of Longest Substring:- "+longestSubstring
                 .getLongestSubstringWithoutRepeatingCharacter());
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(N)");
+    }
+
+    public static void isValidParentheses(Scanner scanner) throws Exception {
+        System.out.println("Starting Valid Parentheses Problem...");
+        System.out.println();
+        System.out.print("Provide a input String:- ");
+        String inputString = scanner.nextLine();
+        System.out.println();
+
+        ValidParentheses validParentheses = new ValidParentheses();
+        validParentheses.acceptInputString(inputString);
+
+        System.out.println();
+        System.out.println();
+
+        System.out.println("Output:- "+validParentheses.checkIfValidParentheses());
         System.out.println("Output Time Complexity:- O(N)");
         System.out.println("Output Space Complexity:- O(N)");
     }

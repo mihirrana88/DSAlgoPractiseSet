@@ -14,7 +14,7 @@ public class DSAlgoPracticeSet {
         //Problem.rainWaterTrapping(scanner);
         //Problem.removeDuplicatesFromSortedArray(scanner);
         //Problem.twoSumArray(scanner);
-        Problem.moveZerosToEnd(scanner);
+        //Problem.moveZerosToEnd(scanner);
 
         // #HashMap
         //Problem.distinctCountInKSizeWindow(scanner);
@@ -23,6 +23,7 @@ public class DSAlgoPracticeSet {
         //Problem.stringPatternMatch(scanner);
         //Problem.longestSubstringWithoutRepeatingCharacter(scanner);
         //Problem.allAnagramsFromString(scanner);
+        Problem.isValidParentheses(scanner);
 
         // #Trees ==> BinaryTree
         //Problem.preOrderTraversalOfBinaryTree(scanner);
