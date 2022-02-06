@@ -412,7 +412,7 @@ public class Problem {
 
         System.out.print("Provide an input array:- ");
         for(int i=0; i<inputLength; i++){
-            String str = scanner.nextLine();
+            String str = scanner.next();
             longestCommonPrefix.acceptInput(str, i);
         }
 

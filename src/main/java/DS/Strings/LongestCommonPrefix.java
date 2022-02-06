@@ -2,6 +2,31 @@ package DS.Strings;
 
 import Exception.InvalidInputArgument;
 
+/*
+Longest Common Prefix
+
+Write a function to find the longest common prefix string amongst an array of strings.
+
+If there is no common prefix, return an empty string "".
+
+Example 1:
+
+Input: strs = ["flower","flow","flight"]
+Output: "fl"
+
+Example 2:
+
+Input: strs = ["dog","racecar","car"]
+Output: ""
+Explanation: There is no common prefix among the input strings.
+
+Constraints:
+
+1 <= strs.length <= 200
+0 <= strs[i].length <= 200
+strs[i] consists of only lower-case English letters.
+*/
+
 public class LongestCommonPrefix {
     public String[] strings = null;
 
@@ -18,10 +43,8 @@ public class LongestCommonPrefix {
 
     public String longestCommonPrefix() throws Exception {
 
-
-
-        if(strings.length == 0){
-            return "";
+        if (null == strings || strings.length == 0){
+            throw new InvalidInputArgument(strings);
         }
 
         if(strings.length == 1){
@@ -39,10 +62,6 @@ public class LongestCommonPrefix {
         for(int i=0; i<minLen; i++){
 
             for(int j=1; j<strings.length; j++){
-                System.out.println("mihir");
-                System.out.println(minLen);
-                System.out.println(strings[0].charAt(i));
-                System.out.println(strings[j].charAt(i));
                 if(strings[0].charAt(i) != strings[j].charAt(i)){
                     return lcp;
                 }
@@ -60,7 +79,6 @@ public class LongestCommonPrefix {
             if(strings[i].length() == 0){
                 return 0;
             }
-            System.out.println("ml");
             min = Math.min(strings[i].length(), min);
         }
         return min;
