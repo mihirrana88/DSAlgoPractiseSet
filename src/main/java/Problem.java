@@ -1,9 +1,6 @@
 import DS.Arrays.*;
 import DS.HashMap.DistinctCountInKSizeWindow;
-import DS.Strings.AllAnagramsInString;
-import DS.Strings.LongestSubstring;
-import DS.Strings.StringPatternMatch;
-import DS.Strings.ValidParentheses;
+import DS.Strings.*;
 import DS.Tree.BinaryTree.*;
 
 import java.util.Scanner;
@@ -403,6 +400,34 @@ public class Problem {
         System.out.println("Output:- "+validParentheses.checkIfValidParentheses());
         System.out.println("Output Time Complexity:- O(N)");
         System.out.println("Output Space Complexity:- O(N)");
+    }
+
+    public static void findLongestCommonPrefix(Scanner scanner) throws Exception {
+        System.out.println("Starting find longest common prefix Problem...");
+        System.out.print("Provide length of input:- ");
+
+        int inputLength = scanner.nextInt();
+        LongestCommonPrefix longestCommonPrefix = new LongestCommonPrefix();
+        longestCommonPrefix.getInputLength(inputLength);
+
+        System.out.print("Provide an input array:- ");
+        for(int i=0; i<inputLength; i++){
+            String str = scanner.nextLine();
+            longestCommonPrefix.acceptInput(str, i);
+        }
+
+        System.out.println();
+
+        System.out.print("Input is:- ");
+        for (String str : longestCommonPrefix.strings){
+            System.out.print(str+" ");
+        }
+
+        System.out.println();
+
+        System.out.println("Output is:- "+longestCommonPrefix.longestCommonPrefix());
+        System.out.println("Output Time Complexity:- O(NM)");
+        System.out.println("Output Space Complexity:- O(1)");
     }
 
     public static void preOrderTraversalOfBinaryTree(Scanner scanner) throws Exception {

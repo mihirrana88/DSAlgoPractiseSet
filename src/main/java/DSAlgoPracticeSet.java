@@ -23,7 +23,8 @@ public class DSAlgoPracticeSet {
         //Problem.stringPatternMatch(scanner);
         //Problem.longestSubstringWithoutRepeatingCharacter(scanner);
         //Problem.allAnagramsFromString(scanner);
-        Problem.isValidParentheses(scanner);
+        //Problem.isValidParentheses(scanner);
+        Problem.findLongestCommonPrefix(scanner);
 
         // #Trees ==> BinaryTree
         //Problem.preOrderTraversalOfBinaryTree(scanner);
