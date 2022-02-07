@@ -15,6 +15,7 @@ public class DSAlgoPracticeSet {
         //Problem.removeDuplicatesFromSortedArray(scanner);
         //Problem.twoSumArray(scanner);
         //Problem.moveZerosToEnd(scanner);
+        Problem.findPivotIndexFromArray(scanner);
 
         // #HashMap
         //Problem.distinctCountInKSizeWindow(scanner);
@@ -24,7 +25,7 @@ public class DSAlgoPracticeSet {
         //Problem.longestSubstringWithoutRepeatingCharacter(scanner);
         //Problem.allAnagramsFromString(scanner);
         //Problem.isValidParentheses(scanner);
-        Problem.findLongestCommonPrefix(scanner);
+        //Problem.findLongestCommonPrefix(scanner);
 
         // #Trees ==> BinaryTree
         //Problem.preOrderTraversalOfBinaryTree(scanner);
