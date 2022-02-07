@@ -277,6 +277,41 @@ public class Problem {
         System.out.println("Output Space Complexity:- O(1)");
     }
 
+    public static void findRunningSumOf1DArray(Scanner scanner) throws Exception {
+        System.out.println("Starting find running sum of 1D Array Problem...");
+        System.out.print("Provide length of input:- ");
+
+        int inputLength = scanner.nextInt();
+        RunningSum1DArray runningSum1DArray = new RunningSum1DArray();
+        runningSum1DArray.getInputLength(inputLength);
+
+        System.out.print("Provide an input array:- ");
+        for(int i=0; i<inputLength; i++){
+            int num = scanner.nextInt();
+            runningSum1DArray.acceptInput(num, i);
+        }
+
+        System.out.println();
+
+        System.out.print("Input is:- ");
+        for (int num : runningSum1DArray.nums){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+        runningSum1DArray.getRunningSumOf1DArray();
+        System.out.print("Output is:- ");
+        for (int num : runningSum1DArray.nums){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(1)");
+    }
+
     public static void distinctCountInKSizeWindow(Scanner scanner) throws Exception {
         System.out.println("Starting Distinct Element Count in K size window Problem...");
         System.out.print("Provide length of input:- ");
