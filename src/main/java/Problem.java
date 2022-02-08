@@ -312,6 +312,34 @@ public class Problem {
         System.out.println("Output Space Complexity:- O(1)");
     }
 
+    public static void findDuplicateNumberArray(Scanner scanner) throws Exception {
+        System.out.println("Starting Pivot Index from Array Problem...");
+        System.out.print("Provide length of input:- ");
+
+        int inputLength = scanner.nextInt();
+        DuplicateNumberArray duplicateNumberArray = new DuplicateNumberArray();
+        duplicateNumberArray.getInputLength(inputLength);
+
+        System.out.print("Provide an input array:- ");
+        for(int i=0; i<inputLength; i++){
+            int num = scanner.nextInt();
+            duplicateNumberArray.acceptInput(num, i);
+        }
+
+        System.out.println();
+
+        System.out.print("Input is:- ");
+        for (int num : duplicateNumberArray.nums){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+        System.out.println("Output is:- "+duplicateNumberArray.getDuplicateNumber());
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(1)");
+    }
+
     public static void distinctCountInKSizeWindow(Scanner scanner) throws Exception {
         System.out.println("Starting Distinct Element Count in K size window Problem...");
         System.out.print("Provide length of input:- ");
