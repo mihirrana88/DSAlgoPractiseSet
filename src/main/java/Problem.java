@@ -340,6 +340,41 @@ public class Problem {
         System.out.println("Output Space Complexity:- O(1)");
     }
 
+    public static void sortColorsArrays(Scanner scanner) throws Exception {
+        System.out.println("Starting Sort Colors Array Problem...");
+        System.out.print("Provide length of input:- ");
+
+        int inputLength = scanner.nextInt();
+        SortColors sortColors = new SortColors();
+        sortColors.getInputLength(inputLength);
+
+        System.out.print("Provide an input array:- ");
+        for(int i=0; i<inputLength; i++){
+            int num = scanner.nextInt();
+            sortColors.acceptInput(num, i);
+        }
+
+        System.out.println();
+
+        System.out.print("Input is:- ");
+        for (int num : sortColors.nums){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+        sortColors.sortColors();
+        System.out.print("Output is:- ");
+        for (int num : sortColors.nums){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(1)");
+    }
+
     public static void distinctCountInKSizeWindow(Scanner scanner) throws Exception {
         System.out.println("Starting Distinct Element Count in K size window Problem...");
         System.out.print("Provide length of input:- ");

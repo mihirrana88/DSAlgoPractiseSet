@@ -17,7 +17,8 @@ public class DSAlgoPracticeSet {
         //Problem.moveZerosToEnd(scanner);
         //Problem.findPivotIndexFromArray(scanner);
         //Problem.findRunningSumOf1DArray(scanner);
-        Problem.findDuplicateNumberArray(scanner);
+        //Problem.findDuplicateNumberArray(scanner);
+        Problem.sortColorsArrays(scanner);
 
         // #HashMap
         //Problem.distinctCountInKSizeWindow(scanner);
