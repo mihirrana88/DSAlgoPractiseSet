@@ -375,6 +375,34 @@ public class Problem {
         System.out.println("Output Space Complexity:- O(1)");
     }
 
+    public static void findContainerWithMaxWaterArray(Scanner scanner) throws Exception {
+        System.out.println("Starting Container with max water Problem...");
+        System.out.print("Provide length of input:- ");
+
+        int inputLength = scanner.nextInt();
+        ContainerWithMostWater containerWithMostWater = new ContainerWithMostWater();
+        containerWithMostWater.getInputLength(inputLength);
+
+        System.out.print("Provide an input array:- ");
+        for(int i=0; i<inputLength; i++){
+            int num = scanner.nextInt();
+            containerWithMostWater.acceptInput(num, i);
+        }
+
+        System.out.println();
+
+        System.out.print("Input is:- ");
+        for (int num : containerWithMostWater.nums){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+        System.out.println("Output is:- "+containerWithMostWater.getContainerWithMaxWater());
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(1)");
+    }
+
     public static void distinctCountInKSizeWindow(Scanner scanner) throws Exception {
         System.out.println("Starting Distinct Element Count in K size window Problem...");
         System.out.print("Provide length of input:- ");
