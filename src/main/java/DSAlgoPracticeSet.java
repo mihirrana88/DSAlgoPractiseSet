@@ -19,7 +19,8 @@ public class DSAlgoPracticeSet {
         //Problem.findRunningSumOf1DArray(scanner);
         //Problem.findDuplicateNumberArray(scanner);
         //Problem.sortColorsArrays(scanner);
-        Problem.findContainerWithMaxWaterArray(scanner);
+        //Problem.findContainerWithMaxWaterArray(scanner);
+        Problem.findSingleNonRepeatedNumberFromArray(scanner);
 
         // #HashMap
         //Problem.distinctCountInKSizeWindow(scanner);

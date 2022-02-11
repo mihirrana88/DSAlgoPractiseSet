@@ -1,4 +1,5 @@
 import DS.Arrays.*;
+import DS.BitManipulation.SingleNumber;
 import DS.HashMap.DistinctCountInKSizeWindow;
 import DS.Strings.*;
 import DS.Tree.BinaryTree.*;
@@ -399,6 +400,34 @@ public class Problem {
         System.out.println();
 
         System.out.println("Output is:- "+containerWithMostWater.getContainerWithMaxWater());
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(1)");
+    }
+
+    public static void findSingleNonRepeatedNumberFromArray(Scanner scanner) throws Exception {
+        System.out.println("Starting find single non repeated number Problem...");
+        System.out.print("Provide length of input:- ");
+
+        int inputLength = scanner.nextInt();
+        SingleNumber singleNumber = new SingleNumber();
+        singleNumber.getInputLength(inputLength);
+
+        System.out.print("Provide an input array:- ");
+        for(int i=0; i<inputLength; i++){
+            int num = scanner.nextInt();
+            singleNumber.acceptInput(num, i);
+        }
+
+        System.out.println();
+
+        System.out.print("Input is:- ");
+        for (int num : singleNumber.nums){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+        System.out.println("Output is:- "+singleNumber.getSingleNonRepeatedNumber());
         System.out.println("Output Time Complexity:- O(N)");
         System.out.println("Output Space Complexity:- O(1)");
     }
