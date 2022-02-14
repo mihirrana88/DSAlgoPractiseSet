@@ -20,8 +20,11 @@ public class DSAlgoPracticeSet {
         //Problem.findDuplicateNumberArray(scanner);
         //Problem.sortColorsArrays(scanner);
         //Problem.findContainerWithMaxWaterArray(scanner);
+        //Problem.isReachableToEndOfArray(scanner);
+
+        // #Bit Manipulation
         //Problem.findSingleNonRepeatedNumberFromArray(scanner);
-        Problem.isReachableToEndOfArray(scanner);
+        Problem.findHammingWeightOfInputNumber(scanner);
 
         // #HashMap
         //Problem.distinctCountInKSizeWindow(scanner);

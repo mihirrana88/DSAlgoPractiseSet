@@ -1,4 +1,5 @@
 import DS.Arrays.*;
+import DS.BitManipulation.HammingWeight;
 import DS.BitManipulation.SingleNumber;
 import DS.HashMap.DistinctCountInKSizeWindow;
 import DS.Strings.*;
@@ -456,6 +457,25 @@ public class Problem {
         System.out.println();
 
         System.out.println("Output is:- "+singleNumber.getSingleNonRepeatedNumber());
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(1)");
+    }
+
+    public static void findHammingWeightOfInputNumber(Scanner scanner) throws Exception {
+        System.out.println("Starting Hamming Weight of Number Problem...");
+        System.out.print("Provide a input number:- ");
+
+        int inputNumber = scanner.nextInt();
+        HammingWeight hammingWeight = new HammingWeight();
+        hammingWeight.acceptInput(inputNumber);
+
+        System.out.println();
+
+        System.out.print("Input is:- "+hammingWeight.n);
+
+        System.out.println();
+
+        System.out.println("Output is:- "+hammingWeight.getHammingWeight());
         System.out.println("Output Time Complexity:- O(N)");
         System.out.println("Output Space Complexity:- O(1)");
     }
