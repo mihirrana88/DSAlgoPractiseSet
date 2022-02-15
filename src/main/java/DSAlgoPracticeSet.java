@@ -24,7 +24,7 @@ public class DSAlgoPracticeSet {
 
         // #Bit Manipulation
         //Problem.findSingleNonRepeatedNumberFromArray(scanner);
-        Problem.findHammingWeightOfInputNumber(scanner);
+        //Problem.findHammingWeightOfInputNumber(scanner);
 
         // #HashMap
         //Problem.distinctCountInKSizeWindow(scanner);
@@ -35,6 +35,7 @@ public class DSAlgoPracticeSet {
         //Problem.allAnagramsFromString(scanner);
         //Problem.isValidParentheses(scanner);
         //Problem.findLongestCommonPrefix(scanner);
+        Problem.reverseString(scanner);
 
         // #Trees ==> BinaryTree
         //Problem.preOrderTraversalOfBinaryTree(scanner);

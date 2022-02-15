@@ -633,6 +633,25 @@ public class Problem {
         System.out.println("Output Space Complexity:- O(N)");
     }
 
+    public static void reverseString(Scanner scanner) throws Exception {
+        System.out.println("Starting Reverse String Problem...");
+        System.out.println();
+        System.out.print("Provide a input String:- ");
+        String inputString = scanner.nextLine();
+        System.out.println();
+
+        ReverseString reverseString = new ReverseString();
+        reverseString.acceptInputString(inputString);
+
+        System.out.println();
+        System.out.println();
+
+        reverseString.reverseString();
+        System.out.println("Output:- "+reverseString.inputString);
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(1)");
+    }
+
     public static void findLongestCommonPrefix(Scanner scanner) throws Exception {
         System.out.println("Starting find longest common prefix Problem...");
         System.out.print("Provide length of input:- ");
