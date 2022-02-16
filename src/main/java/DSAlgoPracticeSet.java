@@ -29,13 +29,16 @@ public class DSAlgoPracticeSet {
         // #HashMap
         //Problem.distinctCountInKSizeWindow(scanner);
 
+        // #Maths
+        Problem.findPrimeCount(scanner);
+
         // #Strings
         //Problem.stringPatternMatch(scanner);
         //Problem.longestSubstringWithoutRepeatingCharacter(scanner);
         //Problem.allAnagramsFromString(scanner);
         //Problem.isValidParentheses(scanner);
         //Problem.findLongestCommonPrefix(scanner);
-        Problem.reverseString(scanner);
+        //Problem.reverseString(scanner);
 
         // #Trees ==> BinaryTree
         //Problem.preOrderTraversalOfBinaryTree(scanner);

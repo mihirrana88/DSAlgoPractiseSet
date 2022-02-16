@@ -2,6 +2,7 @@ import DS.Arrays.*;
 import DS.BitManipulation.HammingWeight;
 import DS.BitManipulation.SingleNumber;
 import DS.HashMap.DistinctCountInKSizeWindow;
+import DS.Maths.SieveOfEratosthenes;
 import DS.Strings.*;
 import DS.Tree.BinaryTree.*;
 
@@ -650,6 +651,24 @@ public class Problem {
         System.out.println("Output:- "+reverseString.inputString);
         System.out.println("Output Time Complexity:- O(N)");
         System.out.println("Output Space Complexity:- O(1)");
+    }
+
+    public static void findPrimeCount(Scanner scanner) throws Exception {
+        System.out.println("Starting Sieve of Eratosthenes Problem...");
+        System.out.println();
+        System.out.print("Provide a input Number:- ");
+        Integer inputNumber = scanner.nextInt();
+        System.out.println();
+
+        SieveOfEratosthenes sieveOfEratosthenes = new SieveOfEratosthenes();
+        sieveOfEratosthenes.acceptInputString(inputNumber);
+
+        System.out.println();
+        System.out.println();
+
+        System.out.println("Output:- "+sieveOfEratosthenes.getPrimeCount());
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(N)");
     }
 
     public static void findLongestCommonPrefix(Scanner scanner) throws Exception {
