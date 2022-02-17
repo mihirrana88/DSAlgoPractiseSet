@@ -2,6 +2,7 @@ import DS.Arrays.*;
 import DS.BitManipulation.HammingWeight;
 import DS.BitManipulation.SingleNumber;
 import DS.HashMap.DistinctCountInKSizeWindow;
+import DS.Maths.GreatestCommonDivisor;
 import DS.Maths.SieveOfEratosthenes;
 import DS.Strings.*;
 import DS.Tree.BinaryTree.*;
@@ -458,6 +459,34 @@ public class Problem {
         System.out.println();
 
         System.out.println("Output is:- "+singleNumber.getSingleNonRepeatedNumber());
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(1)");
+    }
+
+    public static void findGreatestCommonDivisor(Scanner scanner) throws Exception {
+        System.out.println("Starting Greatest Common Divisor Problem...");
+        System.out.print("Provide length of input:- ");
+
+        int inputLength = scanner.nextInt();
+        GreatestCommonDivisor greatestCommonDivisior = new GreatestCommonDivisor();
+        greatestCommonDivisior.getInputLength(inputLength);
+
+        System.out.print("Provide an input array:- ");
+        for(int i=0; i<inputLength; i++){
+            int num = scanner.nextInt();
+            greatestCommonDivisior.acceptInput(num, i);
+        }
+
+        System.out.println();
+
+        System.out.print("Input is:- ");
+        for (int num : greatestCommonDivisior.nums){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+        System.out.println("Output is:- "+greatestCommonDivisior.greatestCommonDivisor());
         System.out.println("Output Time Complexity:- O(N)");
         System.out.println("Output Space Complexity:- O(1)");
     }

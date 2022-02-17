@@ -30,7 +30,8 @@ public class DSAlgoPracticeSet {
         //Problem.distinctCountInKSizeWindow(scanner);
 
         // #Maths
-        Problem.findPrimeCount(scanner);
+        //Problem.findPrimeCount(scanner);
+        Problem.findGreatestCommonDivisor(scanner);
 
         // #Strings
         //Problem.stringPatternMatch(scanner);
