@@ -31,7 +31,7 @@ public class DSAlgoPracticeSet {
 
         // #Maths
         //Problem.findPrimeCount(scanner);
-        Problem.findGreatestCommonDivisor(scanner);
+        //Problem.findGreatestCommonDivisor(scanner);
 
         // #Strings
         //Problem.stringPatternMatch(scanner);
