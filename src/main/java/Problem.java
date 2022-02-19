@@ -3,6 +3,7 @@ import DS.BitManipulation.HammingWeight;
 import DS.BitManipulation.SingleNumber;
 import DS.HashMap.DistinctCountInKSizeWindow;
 import DS.Maths.GreatestCommonDivisor;
+import DS.Maths.PowerOfThree;
 import DS.Maths.SieveOfEratosthenes;
 import DS.Strings.*;
 import DS.Tree.BinaryTree.*;
@@ -488,6 +489,25 @@ public class Problem {
 
         System.out.println("Output is:- "+greatestCommonDivisior.greatestCommonDivisor());
         System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(1)");
+    }
+
+    public static void findPowerOfThreeOfInputNumber(Scanner scanner) throws Exception {
+        System.out.println("Starting Power Of Three of Number Problem...");
+        System.out.print("Provide a input number:- ");
+
+        int inputNumber = scanner.nextInt();
+        PowerOfThree powerOfThree = new PowerOfThree();
+        powerOfThree.acceptInput(inputNumber);
+
+        System.out.println();
+
+        System.out.print("Input is:- "+powerOfThree.n);
+
+        System.out.println();
+
+        System.out.println("Output is:- "+powerOfThree.isPowerOfThree());
+        System.out.println("Output Time Complexity:- O(1)");
         System.out.println("Output Space Complexity:- O(1)");
     }
 
