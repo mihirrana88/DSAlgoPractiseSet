@@ -3,6 +3,7 @@ import DS.BitManipulation.HammingWeight;
 import DS.BitManipulation.SingleNumber;
 import DS.HashMap.DistinctCountInKSizeWindow;
 import DS.Maths.GreatestCommonDivisor;
+import DS.Maths.HappyNumber;
 import DS.Maths.PowerOfThree;
 import DS.Maths.SieveOfEratosthenes;
 import DS.Strings.*;
@@ -508,6 +509,25 @@ public class Problem {
 
         System.out.println("Output is:- "+powerOfThree.isPowerOfThree());
         System.out.println("Output Time Complexity:- O(1)");
+        System.out.println("Output Space Complexity:- O(1)");
+    }
+
+    public static void isHappyNumberIsInputNumber(Scanner scanner) throws Exception {
+        System.out.println("Starting Happy Number Problem...");
+        System.out.print("Provide a input number:- ");
+
+        int inputNumber = scanner.nextInt();
+        HappyNumber happyNumber = new HappyNumber();
+        happyNumber.acceptInput(inputNumber);
+
+        System.out.println();
+
+        System.out.print("Input is:- "+happyNumber.n);
+
+        System.out.println();
+
+        System.out.println("Output is:- "+happyNumber.isHappyNumber());
+        System.out.println("Output Time Complexity:- O(logn)");
         System.out.println("Output Space Complexity:- O(1)");
     }
 

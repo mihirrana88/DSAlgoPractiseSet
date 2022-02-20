@@ -32,7 +32,8 @@ public class DSAlgoPracticeSet {
         // #Maths
         //Problem.findPrimeCount(scanner);
         //Problem.findGreatestCommonDivisor(scanner);
-        Problem.findPowerOfThreeOfInputNumber(scanner);
+        //Problem.findPowerOfThreeOfInputNumber(scanner);
+        Problem.isHappyNumberIsInputNumber(scanner);
 
         // #Strings
         //Problem.stringPatternMatch(scanner);
