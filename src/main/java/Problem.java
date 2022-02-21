@@ -2,10 +2,7 @@ import DS.Arrays.*;
 import DS.BitManipulation.HammingWeight;
 import DS.BitManipulation.SingleNumber;
 import DS.HashMap.DistinctCountInKSizeWindow;
-import DS.Maths.GreatestCommonDivisor;
-import DS.Maths.HappyNumber;
-import DS.Maths.PowerOfThree;
-import DS.Maths.SieveOfEratosthenes;
+import DS.Maths.*;
 import DS.Strings.*;
 import DS.Tree.BinaryTree.*;
 
@@ -528,6 +525,25 @@ public class Problem {
 
         System.out.println("Output is:- "+happyNumber.isHappyNumber());
         System.out.println("Output Time Complexity:- O(logn)");
+        System.out.println("Output Space Complexity:- O(1)");
+    }
+
+    public static void calculateExpression(Scanner scanner) throws Exception {
+        System.out.println("Starting Calculator II Problem...");
+        System.out.println();
+        System.out.print("Provide a input expression as String:- ");
+        String inputString = scanner.nextLine();
+        System.out.println();
+
+        BasicCalculatorII calculatorII = new BasicCalculatorII();
+        calculatorII.acceptInputString(inputString);
+
+        System.out.println();
+        System.out.print("Input is:- "+calculatorII.inputString);
+        System.out.println();
+
+        System.out.println("Output:- "+calculatorII.evaluteExpression());
+        System.out.println("Output Time Complexity:- O(N)");
         System.out.println("Output Space Complexity:- O(1)");
     }
 
