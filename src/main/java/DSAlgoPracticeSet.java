@@ -34,7 +34,8 @@ public class DSAlgoPracticeSet {
         //Problem.findGreatestCommonDivisor(scanner);
         //Problem.findPowerOfThreeOfInputNumber(scanner);
         //Problem.isHappyNumberIsInputNumber(scanner);
-        Problem.calculateExpression(scanner);
+        //Problem.calculateExpression(scanner);
+        Problem.findPerfectSquareInputNumber(scanner);
 
         // #Strings
         //Problem.stringPatternMatch(scanner);

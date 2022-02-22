@@ -528,6 +528,25 @@ public class Problem {
         System.out.println("Output Space Complexity:- O(1)");
     }
 
+    public static void findPerfectSquareInputNumber(Scanner scanner) throws Exception {
+        System.out.println("Starting Perfect Square Problem...");
+        System.out.print("Provide a input number:- ");
+
+        int inputNumber = scanner.nextInt();
+        PerfectSquares perfectSquares = new PerfectSquares();
+        perfectSquares.acceptInput(inputNumber);
+
+        System.out.println();
+
+        System.out.print("Input is:- "+perfectSquares.n);
+
+        System.out.println();
+
+        System.out.println("Output is:- "+perfectSquares.perfectSquare());
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(N)");
+    }
+
     public static void calculateExpression(Scanner scanner) throws Exception {
         System.out.println("Starting Calculator II Problem...");
         System.out.println();
