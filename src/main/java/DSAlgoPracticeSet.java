@@ -25,6 +25,7 @@ public class DSAlgoPracticeSet {
         // #Bit Manipulation
         //Problem.findSingleNonRepeatedNumberFromArray(scanner);
         //Problem.findHammingWeightOfInputNumber(scanner);
+        Problem.findSumOfTwoIntegers(scanner);
 
         // #HashMap
         //Problem.distinctCountInKSizeWindow(scanner);
@@ -35,7 +36,7 @@ public class DSAlgoPracticeSet {
         //Problem.findPowerOfThreeOfInputNumber(scanner);
         //Problem.isHappyNumberIsInputNumber(scanner);
         //Problem.calculateExpression(scanner);
-        Problem.findPerfectSquareInputNumber(scanner);
+        //Problem.findPerfectSquareInputNumber(scanner);
 
         // #Strings
         //Problem.stringPatternMatch(scanner);

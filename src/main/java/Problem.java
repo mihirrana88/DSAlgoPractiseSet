@@ -1,6 +1,7 @@
 import DS.Arrays.*;
 import DS.BitManipulation.HammingWeight;
 import DS.BitManipulation.SingleNumber;
+import DS.BitManipulation.SumOfTwoInteger;
 import DS.HashMap.DistinctCountInKSizeWindow;
 import DS.Maths.*;
 import DS.Strings.*;
@@ -582,6 +583,32 @@ public class Problem {
 
         System.out.println("Output is:- "+hammingWeight.getHammingWeight());
         System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(1)");
+    }
+
+    public static void findSumOfTwoIntegers(Scanner scanner) throws Exception {
+        System.out.println("Starting Sum of Two Integers Problem...");
+
+        System.out.print("Provide a input number1:- ");
+        int inputNumber1 = scanner.nextInt();
+
+        System.out.println();
+
+        System.out.print("Provide a input number2:- ");
+        int inputNumber2 = scanner.nextInt();
+
+        SumOfTwoInteger sumOfTwoInteger = new SumOfTwoInteger();
+        sumOfTwoInteger.acceptInputNumber1(inputNumber1);
+        sumOfTwoInteger.acceptInputNumber2(inputNumber2);
+
+        System.out.println();
+
+        System.out.print("Input numbers are:- "+sumOfTwoInteger.n1+", "+sumOfTwoInteger.n2);
+
+        System.out.println();
+
+        System.out.println("Output is:- "+sumOfTwoInteger.getSumOfTwoInteger());
+        System.out.println("Output Time Complexity:- O(1)");
         System.out.println("Output Space Complexity:- O(1)");
     }
 
