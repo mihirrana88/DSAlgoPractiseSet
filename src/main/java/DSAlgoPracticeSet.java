@@ -25,7 +25,8 @@ public class DSAlgoPracticeSet {
         // #Bit Manipulation
         //Problem.findSingleNonRepeatedNumberFromArray(scanner);
         //Problem.findHammingWeightOfInputNumber(scanner);
-        Problem.findSumOfTwoIntegers(scanner);
+        //Problem.findSumOfTwoIntegers(scanner);
+        Problem.findDivisionOfTwoIntegers(scanner);
 
         // #HashMap
         //Problem.distinctCountInKSizeWindow(scanner);

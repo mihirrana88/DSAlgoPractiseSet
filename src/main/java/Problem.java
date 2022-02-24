@@ -1,4 +1,5 @@
 import DS.Arrays.*;
+import DS.BitManipulation.DivideTwoIntegers;
 import DS.BitManipulation.HammingWeight;
 import DS.BitManipulation.SingleNumber;
 import DS.BitManipulation.SumOfTwoInteger;
@@ -609,6 +610,32 @@ public class Problem {
 
         System.out.println("Output is:- "+sumOfTwoInteger.getSumOfTwoInteger());
         System.out.println("Output Time Complexity:- O(1)");
+        System.out.println("Output Space Complexity:- O(1)");
+    }
+
+    public static void findDivisionOfTwoIntegers(Scanner scanner) throws Exception {
+        System.out.println("Starting Division of Two Integers Problem...");
+
+        System.out.print("Provide a input dividend:- ");
+        int inputNumber1 = scanner.nextInt();
+
+        System.out.println();
+
+        System.out.print("Provide a input divisor:- ");
+        int inputNumber2 = scanner.nextInt();
+
+        DivideTwoIntegers divideTwoIntegers = new DivideTwoIntegers();
+        divideTwoIntegers.acceptInputNumber1(inputNumber1);
+        divideTwoIntegers.acceptInputNumber2(inputNumber2);
+
+        System.out.println();
+
+        System.out.print("Input as follows, Dividend is "+divideTwoIntegers.n1+", Divisor is "+divideTwoIntegers.n2);
+
+        System.out.println();
+
+        System.out.println("Output is:- "+divideTwoIntegers.divisionOfTwoIntegers());
+        System.out.println("Output Time Complexity:- O(logN)");
         System.out.println("Output Space Complexity:- O(1)");
     }
 
