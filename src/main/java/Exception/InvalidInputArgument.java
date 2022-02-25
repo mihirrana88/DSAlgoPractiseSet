@@ -36,6 +36,12 @@ public class InvalidInputArgument extends Exception {
         }
     }
 
+    public InvalidInputArgument(Double input) throws Exception {
+        if (null == input){
+            throw new Exception("InvalidInputArgument, input=null");
+        }
+    }
+
     public InvalidInputArgument(BinaryTree input) throws Exception {
         if (null == input){
             throw new Exception("InvalidInputArgument, input BinaryTree=null");

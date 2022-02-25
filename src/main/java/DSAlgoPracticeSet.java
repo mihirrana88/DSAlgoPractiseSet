@@ -26,7 +26,7 @@ public class DSAlgoPracticeSet {
         //Problem.findSingleNonRepeatedNumberFromArray(scanner);
         //Problem.findHammingWeightOfInputNumber(scanner);
         //Problem.findSumOfTwoIntegers(scanner);
-        Problem.findDivisionOfTwoIntegers(scanner);
+        //Problem.findDivisionOfTwoIntegers(scanner);
 
         // #HashMap
         //Problem.distinctCountInKSizeWindow(scanner);
@@ -38,6 +38,7 @@ public class DSAlgoPracticeSet {
         //Problem.isHappyNumberIsInputNumber(scanner);
         //Problem.calculateExpression(scanner);
         //Problem.findPerfectSquareInputNumber(scanner);
+        Problem.findPowerXIsToN(scanner);
 
         // #Strings
         //Problem.stringPatternMatch(scanner);

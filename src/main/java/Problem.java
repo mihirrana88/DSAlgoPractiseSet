@@ -639,6 +639,32 @@ public class Problem {
         System.out.println("Output Space Complexity:- O(1)");
     }
 
+    public static void findPowerXIsToN(Scanner scanner) throws Exception {
+        System.out.println("Starting Pow(x, n) Problem...");
+
+        System.out.print("Provide a input x:- ");
+        double inputNumber1 = scanner.nextDouble();
+
+        System.out.println();
+
+        System.out.print("Provide a input n:- ");
+        int inputNumber2 = scanner.nextInt();
+
+        PowerXIsToN powerXIsToN = new PowerXIsToN();
+        powerXIsToN.acceptInputNumber1(inputNumber1);
+        powerXIsToN.acceptInputNumber2(inputNumber2);
+
+        System.out.println();
+
+        System.out.print("Input as follows, X is "+powerXIsToN.x+", N is "+powerXIsToN.n);
+
+        System.out.println();
+
+        System.out.println("Output is:- "+powerXIsToN.powerXisToN());
+        System.out.println("Output Time Complexity:- O(logN)");
+        System.out.println("Output Space Complexity:- O(1)");
+    }
+
     public static void distinctCountInKSizeWindow(Scanner scanner) throws Exception {
         System.out.println("Starting Distinct Element Count in K size window Problem...");
         System.out.print("Provide length of input:- ");
