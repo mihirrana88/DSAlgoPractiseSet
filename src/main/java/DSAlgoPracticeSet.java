@@ -38,7 +38,7 @@ public class DSAlgoPracticeSet {
         //Problem.isHappyNumberIsInputNumber(scanner);
         //Problem.calculateExpression(scanner);
         //Problem.findPerfectSquareInputNumber(scanner);
-        Problem.findPowerXIsToN(scanner);
+        //Problem.findPowerXIsToN(scanner);
 
         // #Strings
         //Problem.stringPatternMatch(scanner);
