@@ -5,6 +5,7 @@ import DS.BitManipulation.SingleNumber;
 import DS.BitManipulation.SumOfTwoInteger;
 import DS.HashMap.DistinctCountInKSizeWindow;
 import DS.Maths.*;
+import DS.Stack.ReversePolishNotation;
 import DS.Strings.*;
 import DS.Tree.BinaryTree.*;
 
@@ -663,6 +664,29 @@ public class Problem {
         System.out.println("Output is:- "+powerXIsToN.powerXisToN());
         System.out.println("Output Time Complexity:- O(logN)");
         System.out.println("Output Space Complexity:- O(1)");
+    }
+
+    public static void evaluateReversePolishNotation(Scanner scanner) throws Exception {
+        System.out.println("Starting Evaluate Reverse Polish Notation Problem...");
+        System.out.println();
+        System.out.print("Provide a input String:- ");
+        String inputString = scanner.nextLine();
+        System.out.println();
+
+        ReversePolishNotation reversePolishNotation = new ReversePolishNotation();
+        reversePolishNotation.acceptInput(inputString);
+
+        System.out.println();
+        System.out.println("input length ==>"+reversePolishNotation.inputString.length);
+        System.out.print("Input:- ");
+        for (String s : reversePolishNotation.inputString){
+            System.out.print(s+" ");
+        }
+        System.out.println();
+
+        System.out.println("Output:- "+reversePolishNotation.evaluateReversePolishNotation());
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(N)");
     }
 
     public static void distinctCountInKSizeWindow(Scanner scanner) throws Exception {

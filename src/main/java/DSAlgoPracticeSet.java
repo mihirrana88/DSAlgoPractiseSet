@@ -40,6 +40,9 @@ public class DSAlgoPracticeSet {
         //Problem.findPerfectSquareInputNumber(scanner);
         //Problem.findPowerXIsToN(scanner);
 
+        // #Stack
+        Problem.evaluateReversePolishNotation(scanner);
+
         // #Strings
         //Problem.stringPatternMatch(scanner);
         //Problem.longestSubstringWithoutRepeatingCharacter(scanner);
