@@ -20,7 +20,7 @@ The largest rectangle is shown in the red area, which has an area = 10 units.
 Example 2:
 Input: heights = [2,4]
 Output: 4
- 
+
 Constraints:
 
 1 <= heights.length <= 105
