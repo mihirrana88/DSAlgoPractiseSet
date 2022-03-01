@@ -5,6 +5,7 @@ import DS.BitManipulation.SingleNumber;
 import DS.BitManipulation.SumOfTwoInteger;
 import DS.HashMap.DistinctCountInKSizeWindow;
 import DS.Maths.*;
+import DS.Stack.LargestRectangleHistogram;
 import DS.Stack.ReversePolishNotation;
 import DS.Strings.*;
 import DS.Tree.BinaryTree.*;
@@ -685,6 +686,34 @@ public class Problem {
         System.out.println();
 
         System.out.println("Output:- "+reversePolishNotation.evaluateReversePolishNotation());
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(N)");
+    }
+
+    public static void findLargestRectangleInHistogram(Scanner scanner) throws Exception {
+        System.out.println("Starting Largest Rectangle In Histogram Problem...");
+        System.out.print("Provide length of input:- ");
+
+        int inputLength = scanner.nextInt();
+        LargestRectangleHistogram largestRectangleHistogram = new LargestRectangleHistogram();
+        largestRectangleHistogram.getInputLength(inputLength);
+
+        System.out.print("Provide an input array:- ");
+        for(int i=0; i<inputLength; i++){
+            int num = scanner.nextInt();
+            largestRectangleHistogram.acceptInput(num, i);
+        }
+
+        System.out.println();
+
+        System.out.print("Input is:- ");
+        for (int num : largestRectangleHistogram.nums){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+        System.out.println("Output is:- "+largestRectangleHistogram.getLargestRectangleInHistogram());
         System.out.println("Output Time Complexity:- O(N)");
         System.out.println("Output Space Complexity:- O(N)");
     }

@@ -41,7 +41,8 @@ public class DSAlgoPracticeSet {
         //Problem.findPowerXIsToN(scanner);
 
         // #Stack
-        Problem.evaluateReversePolishNotation(scanner);
+        //Problem.evaluateReversePolishNotation(scanner);
+        Problem.findLargestRectangleInHistogram(scanner);
 
         // #Strings
         //Problem.stringPatternMatch(scanner);
