@@ -42,7 +42,7 @@ public class DSAlgoPracticeSet {
 
         // #Stack
         //Problem.evaluateReversePolishNotation(scanner);
-        Problem.findLargestRectangleInHistogram(scanner);
+        //Problem.findLargestRectangleInHistogram(scanner);
 
         // #Strings
         //Problem.stringPatternMatch(scanner);
@@ -51,6 +51,7 @@ public class DSAlgoPracticeSet {
         //Problem.isValidParentheses(scanner);
         //Problem.findLongestCommonPrefix(scanner);
         //Problem.reverseString(scanner);
+        Problem.findLargestNumber(scanner);
 
         // #Trees ==> BinaryTree
         //Problem.preOrderTraversalOfBinaryTree(scanner);

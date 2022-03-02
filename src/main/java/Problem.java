@@ -936,6 +936,34 @@ public class Problem {
         System.out.println("Output Space Complexity:- O(1)");
     }
 
+    public static void findLargestNumber(Scanner scanner) throws Exception {
+        System.out.println("Starting Largest Number Problem...");
+        System.out.print("Provide length of input:- ");
+
+        int inputLength = scanner.nextInt();
+        LargestNumber largestNumber = new LargestNumber();
+        largestNumber.getInputLength(inputLength);
+
+        System.out.print("Provide an input array:- ");
+        for(int i=0; i<inputLength; i++){
+            int num = scanner.nextInt();
+            largestNumber.acceptInput(num, i);
+        }
+
+        System.out.println();
+
+        System.out.print("Input is:- ");
+        for (int num : largestNumber.nums){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+        System.out.println("Output is:- "+largestNumber.largestNumber());
+        System.out.println("Output Time Complexity:- O(NlogN)");
+        System.out.println("Output Space Complexity:- O(N)");
+    }
+
     public static void preOrderTraversalOfBinaryTree(Scanner scanner) throws Exception {
         System.out.println("Starting Preorder traversal in BinaryTree Problem...");
         System.out.println();
