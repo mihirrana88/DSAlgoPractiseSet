@@ -22,6 +22,9 @@ public class DSAlgoPracticeSet {
         //Problem.findContainerWithMaxWaterArray(scanner);
         //Problem.isReachableToEndOfArray(scanner);
 
+        // #Binary Search
+        Problem.searchInSortedRotatedArray(scanner);
+
         // #Bit Manipulation
         //Problem.findSingleNonRepeatedNumberFromArray(scanner);
         //Problem.findHammingWeightOfInputNumber(scanner);
@@ -51,7 +54,7 @@ public class DSAlgoPracticeSet {
         //Problem.isValidParentheses(scanner);
         //Problem.findLongestCommonPrefix(scanner);
         //Problem.reverseString(scanner);
-        Problem.findLargestNumber(scanner);
+        //Problem.findLargestNumber(scanner);
 
         // #Trees ==> BinaryTree
         //Problem.preOrderTraversalOfBinaryTree(scanner);

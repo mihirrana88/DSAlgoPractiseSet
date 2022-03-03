@@ -1,4 +1,5 @@
 import DS.Arrays.*;
+import DS.BinarySearch.SearchInRotatedSortedArray;
 import DS.BitManipulation.DivideTwoIntegers;
 import DS.BitManipulation.HammingWeight;
 import DS.BitManipulation.SingleNumber;
@@ -962,6 +963,45 @@ public class Problem {
         System.out.println("Output is:- "+largestNumber.largestNumber());
         System.out.println("Output Time Complexity:- O(NlogN)");
         System.out.println("Output Space Complexity:- O(N)");
+    }
+
+    public static void searchInSortedRotatedArray(Scanner scanner) throws Exception {
+        System.out.println("Starting Search in Rotated Sorted Problem...");
+
+        SearchInRotatedSortedArray searchInRotatedSortedArray = new SearchInRotatedSortedArray();
+
+        System.out.print("Provide input target:- ");
+        Integer target = scanner.nextInt();
+        searchInRotatedSortedArray.acceptTarget(target);
+
+        System.out.println();
+
+        System.out.print("Provide length of input:- ");
+        int inputLength = scanner.nextInt();
+        searchInRotatedSortedArray.getInputLength(inputLength);
+
+        System.out.print("Provide an input array:- ");
+        for(int i=0; i<inputLength; i++){
+            int num = scanner.nextInt();
+            searchInRotatedSortedArray.acceptInput(num, i);
+        }
+
+        System.out.println();
+
+        System.out.print("Input is:- ");
+        for (int num : searchInRotatedSortedArray.nums){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+        System.out.println("Input target is:- "+searchInRotatedSortedArray.target);
+
+        System.out.println();
+
+        System.out.println("Output is:- "+searchInRotatedSortedArray.searchTarget());
+        System.out.println("Output Time Complexity:- O(logN)");
+        System.out.println("Output Space Complexity:- O(1)");
     }
 
     public static void preOrderTraversalOfBinaryTree(Scanner scanner) throws Exception {
