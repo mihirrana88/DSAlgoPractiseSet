@@ -23,7 +23,8 @@ public class DSAlgoPracticeSet {
         //Problem.isReachableToEndOfArray(scanner);
 
         // #Binary Search
-        Problem.searchInSortedRotatedArray(scanner);
+        //Problem.searchInSortedRotatedArray(scanner);
+        Problem.findPeakElementFromArray(scanner);
 
         // #Bit Manipulation
         //Problem.findSingleNonRepeatedNumberFromArray(scanner);

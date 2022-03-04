@@ -1,4 +1,5 @@
 import DS.Arrays.*;
+import DS.BinarySearch.FindPeakElement;
 import DS.BinarySearch.SearchInRotatedSortedArray;
 import DS.BitManipulation.DivideTwoIntegers;
 import DS.BitManipulation.HammingWeight;
@@ -1001,6 +1002,34 @@ public class Problem {
 
         System.out.println("Output is:- "+searchInRotatedSortedArray.searchTarget());
         System.out.println("Output Time Complexity:- O(logN)");
+        System.out.println("Output Space Complexity:- O(1)");
+    }
+
+    public static void findPeakElementFromArray(Scanner scanner) throws Exception {
+        System.out.println("Starting Find Peak Element of Array Problem...");
+        System.out.print("Provide length of input:- ");
+
+        int inputLength = scanner.nextInt();
+        FindPeakElement peakElement = new FindPeakElement();
+        peakElement.getInputLength(inputLength);
+
+        System.out.print("Provide an input array:- ");
+        for(int i=0; i<inputLength; i++){
+            int num = scanner.nextInt();
+            peakElement.acceptInput(num, i);
+        }
+
+        System.out.println();
+
+        System.out.print("Input is:- ");
+        for (int num : peakElement.nums){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+        System.out.println("Output is:- "+peakElement.getPeakElement());
+        System.out.println("Output Time Complexity:- O(NlogN)");
         System.out.println("Output Space Complexity:- O(1)");
     }
 
