@@ -5,6 +5,7 @@ import DS.BitManipulation.DivideTwoIntegers;
 import DS.BitManipulation.HammingWeight;
 import DS.BitManipulation.SingleNumber;
 import DS.BitManipulation.SumOfTwoInteger;
+import DS.DynamicProgramming.CoinChange;
 import DS.HashMap.DistinctCountInKSizeWindow;
 import DS.Maths.*;
 import DS.Stack.LargestRectangleHistogram;
@@ -1031,6 +1032,45 @@ public class Problem {
         System.out.println("Output is:- "+peakElement.getPeakElement());
         System.out.println("Output Time Complexity:- O(NlogN)");
         System.out.println("Output Space Complexity:- O(1)");
+    }
+
+    public static void coinChange(Scanner scanner) throws Exception {
+        System.out.println("Starting Coin Change Problem...");
+
+        CoinChange coinChange = new CoinChange();
+
+        System.out.print("Provide input amount:- ");
+        Integer amount = scanner.nextInt();
+        coinChange.acceptTarget(amount);
+
+        System.out.println();
+
+        System.out.print("Provide length of input:- ");
+        int inputLength = scanner.nextInt();
+        coinChange.getInputLength(inputLength);
+
+        System.out.print("Provide an input array:- ");
+        for(int i=0; i<inputLength; i++){
+            int num = scanner.nextInt();
+            coinChange.acceptInput(num, i);
+        }
+
+        System.out.println();
+
+        System.out.print("Input is:- ");
+        for (int num : coinChange.coins){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+        System.out.println("Input amount is:- "+coinChange.amount);
+
+        System.out.println();
+
+        System.out.println("Output is:- "+coinChange.coinChange());
+        System.out.println("Output Time Complexity:- O(MN)");
+        System.out.println("Output Space Complexity:- O(M)");
     }
 
     public static void preOrderTraversalOfBinaryTree(Scanner scanner) throws Exception {

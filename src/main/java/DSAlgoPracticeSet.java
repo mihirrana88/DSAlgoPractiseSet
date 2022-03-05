@@ -24,13 +24,16 @@ public class DSAlgoPracticeSet {
 
         // #Binary Search
         //Problem.searchInSortedRotatedArray(scanner);
-        Problem.findPeakElementFromArray(scanner);
+        //Problem.findPeakElementFromArray(scanner);
 
         // #Bit Manipulation
         //Problem.findSingleNonRepeatedNumberFromArray(scanner);
         //Problem.findHammingWeightOfInputNumber(scanner);
         //Problem.findSumOfTwoIntegers(scanner);
         //Problem.findDivisionOfTwoIntegers(scanner);
+
+        // #Dynamic Programming
+        Problem.coinChange(scanner);
 
         // #HashMap
         //Problem.distinctCountInKSizeWindow(scanner);
