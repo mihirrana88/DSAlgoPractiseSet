@@ -33,7 +33,7 @@ public class DSAlgoPracticeSet {
         //Problem.findDivisionOfTwoIntegers(scanner);
 
         // #Dynamic Programming
-        Problem.coinChange(scanner);
+        //Problem.coinChange(scanner);
 
         // #HashMap
         //Problem.distinctCountInKSizeWindow(scanner);
