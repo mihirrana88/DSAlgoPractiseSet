@@ -837,6 +837,26 @@ public class Problem {
         System.out.println("Output Space Complexity:- O(1)");
     }
 
+    public static void minimumWindowSubstring(Scanner scanner) throws Exception {
+        System.out.println("Starting Minimum Window Substring Problem...");
+        System.out.println();
+        System.out.print("Provide a input String1:- ");
+        String string1 = scanner.nextLine();
+        System.out.println();
+        System.out.print("Provide a input String2:- ");
+        String string2 = scanner.nextLine();
+
+        MinimumWindowSubstring minimumWindowSubstring = new MinimumWindowSubstring();
+        minimumWindowSubstring.acceptInputString1(string1);
+        minimumWindowSubstring.acceptInputString2(string2);
+
+        System.out.println();
+
+        System.out.println("Output is:- "+minimumWindowSubstring.minWindow());
+        System.out.println("Output Time Complexity:- O(|S|+|T|)");
+        System.out.println("Output Space Complexity:- O(|S|+|T|)");
+    }
+
     public static void longestSubstringWithoutRepeatingCharacter(Scanner scanner) throws Exception {
         System.out.println("Starting Longest Substring Without Repeating Character Problem...");
         System.out.println();
