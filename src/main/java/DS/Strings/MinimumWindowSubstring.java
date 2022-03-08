@@ -34,7 +34,7 @@ Input: s = "a", t = "aa"
 Output: ""
 Explanation: Both 'a's from t must be included in the window.
 Since the largest window of s only has one 'a', return empty string.
- 
+
 Constraints:
 
 m == s.length
