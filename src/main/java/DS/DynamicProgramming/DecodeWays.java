@@ -37,7 +37,7 @@ public class DecodeWays {
             }
             //if the number formed by combining prev and current character is not in range [1,26]
             //then they can't be grouped and our ans will be same as dp[i-1]
-            else if(inputString.charAt(i-2) == '0' || inputString.charAt(i-2) > '2' || c > '6' &&  s.charAt(i-2) == '2'){
+            else if(inputString.charAt(i-2) == '0' || inputString.charAt(i-2) > '2' || c > '6' &&  inputString.charAt(i-2) == '2'){
                 dp[i] = dp[i-1];
             }
             //if it is in range [1,26]
