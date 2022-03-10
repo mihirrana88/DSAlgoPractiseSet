@@ -6,6 +6,7 @@ import DS.BitManipulation.HammingWeight;
 import DS.BitManipulation.SingleNumber;
 import DS.BitManipulation.SumOfTwoInteger;
 import DS.DynamicProgramming.CoinChange;
+import DS.DynamicProgramming.GenerateParentheses;
 import DS.HashMap.DistinctCountInKSizeWindow;
 import DS.Maths.*;
 import DS.Stack.LargestRectangleHistogram;
@@ -1091,6 +1092,31 @@ public class Problem {
         System.out.println("Output is:- "+coinChange.coinChange());
         System.out.println("Output Time Complexity:- O(MN)");
         System.out.println("Output Space Complexity:- O(M)");
+    }
+
+    public static void generateParentheses(Scanner scanner) throws Exception {
+        System.out.println("Starting Generate Parentheses Problem...");
+        System.out.print("Provide a input number:- ");
+
+        int inputNumber = scanner.nextInt();
+        GenerateParentheses generateParentheses = new GenerateParentheses();
+        generateParentheses.acceptInput(inputNumber);
+
+        System.out.println();
+
+        System.out.print("Input is:- "+generateParentheses.n);
+
+        System.out.println();
+
+        System.out.print("Output is:- ");
+        for (String s : generateParentheses.generateParenthesis()){
+            System.out.print(s+" ");
+        }
+
+        System.out.println();
+
+        System.out.println("Output Time Complexity:- O(4^n/n^1/2)");
+        System.out.println("Output Space Complexity:- O(4^n/n^1/2)");
     }
 
     public static void preOrderTraversalOfBinaryTree(Scanner scanner) throws Exception {
