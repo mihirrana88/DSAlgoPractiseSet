@@ -34,7 +34,7 @@ public class DSAlgoPracticeSet {
 
         // #Dynamic Programming
         //Problem.coinChange(scanner);
-        Problem.generateParentheses(scanner);
+        //Problem.generateParentheses(scanner);
 
         // #HashMap
         //Problem.distinctCountInKSizeWindow(scanner);
@@ -47,6 +47,7 @@ public class DSAlgoPracticeSet {
         //Problem.calculateExpression(scanner);
         //Problem.findPerfectSquareInputNumber(scanner);
         //Problem.findPowerXIsToN(scanner);
+        Problem.findFactorialTrailingZeroes(scanner);
 
         // #Stack
         //Problem.evaluateReversePolishNotation(scanner);

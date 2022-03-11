@@ -536,6 +536,25 @@ public class Problem {
         System.out.println("Output Space Complexity:- O(1)");
     }
 
+    public static void findFactorialTrailingZeroes(Scanner scanner) throws Exception {
+        System.out.println("Starting Factorial Trailing Zeroes Problem...");
+        System.out.print("Provide a input number:- ");
+
+        int inputNumber = scanner.nextInt();
+        FactorialTrailingZeroes factorialTrailingZeroes = new FactorialTrailingZeroes();
+        factorialTrailingZeroes.acceptInput(inputNumber);
+
+        System.out.println();
+
+        System.out.print("Input is:- "+factorialTrailingZeroes.n);
+
+        System.out.println();
+
+        System.out.println("Output is:- "+factorialTrailingZeroes.getTrailingZeroes());
+        System.out.println("Output Time Complexity:- O(logn)");
+        System.out.println("Output Space Complexity:- O(1)");
+    }
+
     public static void findPerfectSquareInputNumber(Scanner scanner) throws Exception {
         System.out.println("Starting Perfect Square Problem...");
         System.out.print("Provide a input number:- ");
