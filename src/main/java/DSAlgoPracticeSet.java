@@ -47,7 +47,7 @@ public class DSAlgoPracticeSet {
         //Problem.calculateExpression(scanner);
         //Problem.findPerfectSquareInputNumber(scanner);
         //Problem.findPowerXIsToN(scanner);
-        Problem.findFactorialTrailingZeroes(scanner);
+        //Problem.findFactorialTrailingZeroes(scanner);
 
         // #Stack
         //Problem.evaluateReversePolishNotation(scanner);
