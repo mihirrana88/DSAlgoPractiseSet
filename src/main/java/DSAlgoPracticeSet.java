@@ -35,6 +35,7 @@ public class DSAlgoPracticeSet {
         // #Dynamic Programming
         //Problem.coinChange(scanner);
         //Problem.generateParentheses(scanner);
+        Problem.decodeWays(scanner);
 
         // #HashMap
         //Problem.distinctCountInKSizeWindow(scanner);

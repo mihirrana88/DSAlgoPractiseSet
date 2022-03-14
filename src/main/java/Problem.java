@@ -6,6 +6,7 @@ import DS.BitManipulation.HammingWeight;
 import DS.BitManipulation.SingleNumber;
 import DS.BitManipulation.SumOfTwoInteger;
 import DS.DynamicProgramming.CoinChange;
+import DS.DynamicProgramming.DecodeWays;
 import DS.DynamicProgramming.GenerateParentheses;
 import DS.HashMap.DistinctCountInKSizeWindow;
 import DS.Maths.*;
@@ -1136,6 +1137,23 @@ public class Problem {
 
         System.out.println("Output Time Complexity:- O(4^n/n^1/2)");
         System.out.println("Output Space Complexity:- O(4^n/n^1/2)");
+    }
+
+    public static void decodeWays(Scanner scanner) throws Exception {
+        System.out.println("Starting Decode Ways Problem...");
+        System.out.println();
+        System.out.print("Provide a input String:- ");
+        String inputString = scanner.nextLine();
+        System.out.println();
+
+        DecodeWays decodeWays = new DecodeWays();
+        decodeWays.acceptInputString(inputString);
+
+        System.out.println();
+
+        System.out.println("Output:- "+decodeWays.getDecodeWaysCount());
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(N)");
     }
 
     public static void preOrderTraversalOfBinaryTree(Scanner scanner) throws Exception {
