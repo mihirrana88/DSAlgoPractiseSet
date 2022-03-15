@@ -9,6 +9,7 @@ import DS.DynamicProgramming.CoinChange;
 import DS.DynamicProgramming.DecodeWays;
 import DS.DynamicProgramming.GenerateParentheses;
 import DS.HashMap.DistinctCountInKSizeWindow;
+import DS.HashMap.TopKFrequentElement;
 import DS.Maths.*;
 import DS.Stack.LargestRectangleHistogram;
 import DS.Stack.ReversePolishNotation;
@@ -781,6 +782,49 @@ public class Problem {
         System.out.println();
 
         System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(N)");
+    }
+
+    public static void topKFrequentElements(Scanner scanner) throws Exception {
+        System.out.println("Starting Top K Frequent Elements Problem...");
+
+        TopKFrequentElement topKFrequentElement = new TopKFrequentElement();
+
+        System.out.print("Provide input k:- ");
+        int kSize = scanner.nextInt();
+        topKFrequentElement.getWindowSize(kSize);
+
+        System.out.print("Provide length of input:- ");
+        int inputLength = scanner.nextInt();
+        topKFrequentElement.getInputLength(inputLength);
+
+        System.out.print("Provide an input array:- ");
+        for(int i=0; i<inputLength; i++){
+            int num = scanner.nextInt();
+            topKFrequentElement.acceptInput(num, i);
+        }
+
+        System.out.println();
+
+        System.out.print("Input is:- ");
+        for (int num : topKFrequentElement.nums){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+        System.out.println("Given size of k:- "+kSize);
+
+        System.out.println();
+
+        System.out.print("Output is:- ");
+        for (int num : topKFrequentElement.topKFrequent()){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+        System.out.println("Output Time Complexity:- O(N^2)");
         System.out.println("Output Space Complexity:- O(N)");
     }
 
