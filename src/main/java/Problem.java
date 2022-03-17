@@ -11,6 +11,7 @@ import DS.DynamicProgramming.GenerateParentheses;
 import DS.HashMap.DistinctCountInKSizeWindow;
 import DS.HashMap.TopKFrequentElement;
 import DS.Maths.*;
+import DS.Queue.MaximumSumCircularSubarray;
 import DS.Stack.LargestRectangleHistogram;
 import DS.Stack.ReversePolishNotation;
 import DS.Strings.*;
@@ -1198,6 +1199,34 @@ public class Problem {
         System.out.println("Output:- "+decodeWays.getDecodeWaysCount());
         System.out.println("Output Time Complexity:- O(N)");
         System.out.println("Output Space Complexity:- O(N)");
+    }
+
+    public static void maximumSumCircularSubarray(Scanner scanner) throws Exception {
+        System.out.println("Starting Maximum Sum Circular Subarray Problem...");
+        System.out.print("Provide length of input:- ");
+
+        int inputLength = scanner.nextInt();
+        MaximumSumCircularSubarray maximumSumCircularSubarray = new MaximumSumCircularSubarray();
+        maximumSumCircularSubarray.getInputLength(inputLength);
+
+        System.out.print("Provide an input array:- ");
+        for(int i=0; i<inputLength; i++){
+            int num = scanner.nextInt();
+            maximumSumCircularSubarray.acceptInput(num, i);
+        }
+
+        System.out.println();
+
+        System.out.print("Input is:- ");
+        for (int num : maximumSumCircularSubarray.nums){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+        System.out.println("Output is:- "+maximumSumCircularSubarray.maxSubarraySumCircular());
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(1)");
     }
 
     public static void preOrderTraversalOfBinaryTree(Scanner scanner) throws Exception {
