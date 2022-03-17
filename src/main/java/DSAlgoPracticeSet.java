@@ -51,6 +51,9 @@ public class DSAlgoPracticeSet {
         //Problem.findPowerXIsToN(scanner);
         //Problem.findFactorialTrailingZeroes(scanner);
 
+        // Queue
+        Problem.maximumSumCircularSubarray(scanner);
+
         // #Stack
         //Problem.evaluateReversePolishNotation(scanner);
         //Problem.findLargestRectangleInHistogram(scanner);
