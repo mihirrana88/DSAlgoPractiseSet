@@ -12,6 +12,7 @@ import DS.HashMap.DistinctCountInKSizeWindow;
 import DS.HashMap.TopKFrequentElement;
 import DS.Maths.*;
 import DS.Queue.MaximumSumCircularSubarray;
+import DS.Queue.RemoveDuplicateLetters;
 import DS.Stack.LargestRectangleHistogram;
 import DS.Stack.ReversePolishNotation;
 import DS.Strings.*;
@@ -1227,6 +1228,24 @@ public class Problem {
         System.out.println("Output is:- "+maximumSumCircularSubarray.maxSubarraySumCircular());
         System.out.println("Output Time Complexity:- O(N)");
         System.out.println("Output Space Complexity:- O(1)");
+    }
+
+    public static void removeDuplicateLetters(Scanner scanner) throws Exception {
+        System.out.println("Starting Remove Duplicate Letters Problem...");
+        System.out.println();
+        System.out.print("Provide a input String:- ");
+        String inputString = scanner.nextLine();
+        System.out.println();
+
+        RemoveDuplicateLetters removeDuplicateLetters = new RemoveDuplicateLetters();
+        removeDuplicateLetters.acceptInputString(inputString);
+
+        System.out.println();
+        System.out.println();
+
+        System.out.println("Output:- "+removeDuplicateLetters.removeDuplicateLetters());
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(N)");
     }
 
     public static void preOrderTraversalOfBinaryTree(Scanner scanner) throws Exception {
