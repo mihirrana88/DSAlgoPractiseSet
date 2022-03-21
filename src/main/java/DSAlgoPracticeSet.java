@@ -39,7 +39,7 @@ public class DSAlgoPracticeSet {
 
         // #HashMap
         //Problem.distinctCountInKSizeWindow(scanner);
-        Problem.topKFrequentElements(scanner);
+        //Problem.topKFrequentElements(scanner);
 
         // #Maths
         //Problem.findPrimeCount(scanner);
@@ -53,6 +53,7 @@ public class DSAlgoPracticeSet {
 
         // Queue
         //Problem.maximumSumCircularSubarray(scanner);
+        Problem.removeDuplicateLetters(scanner);
 
         // #Stack
         //Problem.evaluateReversePolishNotation(scanner);
