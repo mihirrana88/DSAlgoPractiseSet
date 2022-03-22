@@ -13,6 +13,7 @@ import DS.HashMap.TopKFrequentElement;
 import DS.Maths.*;
 import DS.Queue.MaximumSumCircularSubarray;
 import DS.Queue.RemoveDuplicateLetters;
+import DS.Stack.DecodeString;
 import DS.Stack.LargestRectangleHistogram;
 import DS.Stack.ReversePolishNotation;
 import DS.Strings.*;
@@ -741,6 +742,24 @@ public class Problem {
         System.out.println();
 
         System.out.println("Output is:- "+largestRectangleHistogram.getLargestRectangleInHistogram());
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(N)");
+    }
+
+    public static void decodeString(Scanner scanner) throws Exception {
+        System.out.println("Starting Decode String Problem...");
+        System.out.println();
+        System.out.print("Provide a input String:- ");
+        String inputString = scanner.nextLine();
+        System.out.println();
+
+        DecodeString decodeString = new DecodeString();
+        decodeString.acceptInputString(inputString);
+
+        System.out.println();
+        System.out.println();
+
+        System.out.println("Output:- "+decodeString.decodeString());
         System.out.println("Output Time Complexity:- O(N)");
         System.out.println("Output Space Complexity:- O(N)");
     }

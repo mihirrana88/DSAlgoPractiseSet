@@ -53,11 +53,12 @@ public class DSAlgoPracticeSet {
 
         // Queue
         //Problem.maximumSumCircularSubarray(scanner);
-        Problem.removeDuplicateLetters(scanner);
+        //Problem.removeDuplicateLetters(scanner);
 
         // #Stack
         //Problem.evaluateReversePolishNotation(scanner);
         //Problem.findLargestRectangleInHistogram(scanner);
+        Problem.decodeString(scanner);
 
         // #Strings
         //Problem.stringPatternMatch(scanner);
