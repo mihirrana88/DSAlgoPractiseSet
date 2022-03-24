@@ -30,4 +30,16 @@ public class MatrixPath {
         }
         return countWays(n-1, m) + countWays(n, m-1);
     }
+
+    // Dynamic Programming Solution
+    public int countWays2(int n, int m){
+        int N = m+n-2;
+        int R = m-1;
+        double res = 1;
+
+        for(int i=1; i<=R; i++){
+            res = res * (N - R + i) / i;
+        }
+        return (int)res;
+    }
 }

@@ -13,6 +13,7 @@ import DS.HashMap.TopKFrequentElement;
 import DS.Maths.*;
 import DS.Queue.MaximumSumCircularSubarray;
 import DS.Queue.RemoveDuplicateLetters;
+import DS.Recursion.JosephusProblem;
 import DS.Stack.DecodeString;
 import DS.Stack.LargestRectangleHistogram;
 import DS.Stack.ReversePolishNotation;
@@ -744,6 +745,32 @@ public class Problem {
         System.out.println("Output is:- "+largestRectangleHistogram.getLargestRectangleInHistogram());
         System.out.println("Output Time Complexity:- O(N)");
         System.out.println("Output Space Complexity:- O(N)");
+    }
+
+    public static void josephusProblem(Scanner scanner) throws Exception {
+        System.out.println("Starting Josephus Problem...");
+
+        System.out.print("Provide a input n:- ");
+        int n = scanner.nextInt();
+
+        System.out.println();
+
+        System.out.print("Provide a input k:- ");
+        int k = scanner.nextInt();
+
+        JosephusProblem josephusProblem = new JosephusProblem();
+        josephusProblem.acceptInputN(n);
+        josephusProblem.acceptInputK(k);
+
+        System.out.println();
+
+        System.out.print("Input as follows, n is "+josephusProblem.n+", k is "+josephusProblem.k);
+
+        System.out.println();
+
+        System.out.println("Output is:- "+josephusProblem.findWinner());
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(1)");
     }
 
     public static void decodeString(Scanner scanner) throws Exception {
