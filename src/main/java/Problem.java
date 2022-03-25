@@ -14,6 +14,7 @@ import DS.Maths.*;
 import DS.Queue.MaximumSumCircularSubarray;
 import DS.Queue.RemoveDuplicateLetters;
 import DS.Recursion.JosephusProblem;
+import DS.Recursion.MatrixPath;
 import DS.Stack.DecodeString;
 import DS.Stack.LargestRectangleHistogram;
 import DS.Stack.ReversePolishNotation;
@@ -769,6 +770,32 @@ public class Problem {
         System.out.println();
 
         System.out.println("Output is:- "+josephusProblem.findWinner());
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(1)");
+    }
+
+    public static void matrixPath(Scanner scanner) throws Exception {
+        System.out.println("Starting MatrixPath Problem...");
+
+        System.out.print("Provide a input n:- ");
+        int n = scanner.nextInt();
+
+        System.out.println();
+
+        System.out.print("Provide a input m:- ");
+        int m = scanner.nextInt();
+
+        MatrixPath matrixPath = new MatrixPath();
+        matrixPath.acceptInputN(n);
+        matrixPath.acceptInputM(m);
+
+        System.out.println();
+
+        System.out.print("Input as follows, n is "+matrixPath.n+", k is "+matrixPath.m);
+
+        System.out.println();
+
+        System.out.println("Output is:- "+matrixPath.findNumberOfWay());
         System.out.println("Output Time Complexity:- O(N)");
         System.out.println("Output Space Complexity:- O(1)");
     }
