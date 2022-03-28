@@ -797,7 +797,7 @@ public class Problem {
         System.out.println();
 
         System.out.println("Output is:- "+matrixPath.findNumberOfWay());
-        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Time Complexity:- O(N*M)");
         System.out.println("Output Space Complexity:- O(1)");
     }
 

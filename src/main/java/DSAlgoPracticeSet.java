@@ -57,7 +57,8 @@ public class DSAlgoPracticeSet {
 
         // Recursion
         //Problem.josephusProblem(scanner);
-        Problem.isPalindrome(scanner);
+        //Problem.isPalindrome(scanner);
+        Problem.matrixPath(scanner);
 
         // #Stack
         //Problem.evaluateReversePolishNotation(scanner);
