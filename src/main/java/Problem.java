@@ -1146,6 +1146,24 @@ public class Problem {
         System.out.println("Output Space Complexity:- O(N)");
     }
 
+    public static void stringToInteger(Scanner scanner) throws Exception {
+        System.out.println("Starting String to Integer (atoi) Problem...");
+        System.out.println();
+        System.out.print("Provide a input String:- ");
+        String inputString = scanner.nextLine();
+        System.out.println();
+
+        StringToInteger stringToInteger = new StringToInteger();
+        stringToInteger.acceptInputString(inputString);
+
+        System.out.println();
+        System.out.println();
+
+        System.out.println("Output:Length of Longest Substring:- "+stringToInteger.atoi());
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(1)");
+    }
+
     public static void searchInSortedRotatedArray(Scanner scanner) throws Exception {
         System.out.println("Starting Search in Rotated Sorted Problem...");
 

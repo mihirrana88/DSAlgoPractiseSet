@@ -58,7 +58,7 @@ public class DSAlgoPracticeSet {
         // Recursion
         //Problem.josephusProblem(scanner);
         //Problem.isPalindrome(scanner);
-        Problem.matrixPath(scanner);
+        //Problem.matrixPath(scanner);
 
         // #Stack
         //Problem.evaluateReversePolishNotation(scanner);
@@ -74,6 +74,7 @@ public class DSAlgoPracticeSet {
         //Problem.reverseString(scanner);
         //Problem.findLargestNumber(scanner);
         //Problem.minimumWindowSubstring(scanner);
+        Problem.stringToInteger(scanner);
 
         // #Trees ==> BinaryTree
         //Problem.preOrderTraversalOfBinaryTree(scanner);

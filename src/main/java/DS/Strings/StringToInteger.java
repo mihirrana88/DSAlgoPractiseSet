@@ -1,0 +1,56 @@
+package DS.Strings;
+
+import Exception.InvalidInputArgument;
+
+public class StringToInteger {
+    String inputString = null;
+
+    public void acceptInputString(String inputString) throws Exception {
+        if(null == inputString || inputString.length() == 0){
+            throw new InvalidInputArgument(inputString);
+        }
+        this.inputString = inputString;
+    }
+
+    public int atoi() {
+        int sign = 1;
+        int result = 0;
+        int index = 0;
+        int n = inputString.length();
+
+        // Discard all spaces from the beginning of the input string.
+        while (index < n && inputString.charAt(index) == ' ') {
+            index++;
+        }
+
+        // sign = +1, if it's positive number, otherwise sign = -1.
+        if (index < n && inputString.charAt(index) == '+') {
+            sign = 1;
+            index++;
+        } else if (index < n && inputString.charAt(index) == '-') {
+            sign = -1;
+            index++;
+        }
+
+        // Traverse next digits of input and stop if it is not a digit
+        while (index < n && Character.isDigit(inputString.charAt(index))) {
+            int digit = inputString.charAt(index) - '0';
+
+            // Check overflow and underflow conditions.
+            if ((result > Integer.MAX_VALUE / 10) ||
+                    (result == Integer.MAX_VALUE / 10 && digit > Integer.MAX_VALUE % 10)) {
+                // If integer overflowed return 2^31-1, otherwise if underflowed return -2^31.
+                return sign == 1 ? Integer.MAX_VALUE : Integer.MIN_VALUE;
+            }
+
+            // Append current digit to the result.
+            result = 10 * result + digit;
+            index++;
+        }
+
+        // We have formed a valid number without any overflow/underflow.
+        // Return it after multiplying it with its sign.
+        return sign * result;
+    }
+
+}
