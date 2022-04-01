@@ -422,6 +422,34 @@ public class Problem {
         System.out.println("Output Space Complexity:- O(1)");
     }
 
+    public static void jumpGameII(Scanner scanner) throws Exception {
+        System.out.println("Starting Jump Game II Problem...");
+        System.out.print("Provide length of input:- ");
+
+        int inputLength = scanner.nextInt();
+        JumpGameII jumpGameII = new JumpGameII();
+        jumpGameII.getInputLength(inputLength);
+
+        System.out.print("Provide an input array:- ");
+        for(int i=0; i<inputLength; i++){
+            int num = scanner.nextInt();
+            jumpGameII.acceptInput(num, i);
+        }
+
+        System.out.println();
+
+        System.out.print("Input is:- ");
+        for (int num : jumpGameII.nums){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+        System.out.println("Output is:- "+jumpGameII.count());
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(1)");
+    }
+
     public static void findContainerWithMaxWaterArray(Scanner scanner) throws Exception {
         System.out.println("Starting Container with max water Problem...");
         System.out.print("Provide length of input:- ");

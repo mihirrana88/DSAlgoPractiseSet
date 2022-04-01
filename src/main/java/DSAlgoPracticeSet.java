@@ -21,6 +21,7 @@ public class DSAlgoPracticeSet {
         //Problem.sortColorsArrays(scanner);
         //Problem.findContainerWithMaxWaterArray(scanner);
         //Problem.isReachableToEndOfArray(scanner);
+        Problem.jumpGameII(scanner);
 
         // #Binary Search
         //Problem.searchInSortedRotatedArray(scanner);
@@ -74,7 +75,7 @@ public class DSAlgoPracticeSet {
         //Problem.reverseString(scanner);
         //Problem.findLargestNumber(scanner);
         //Problem.minimumWindowSubstring(scanner);
-        Problem.stringToInteger(scanner);
+        //Problem.stringToInteger(scanner);
 
         // #Trees ==> BinaryTree
         //Problem.preOrderTraversalOfBinaryTree(scanner);
