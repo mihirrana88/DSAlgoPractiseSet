@@ -4,7 +4,7 @@ import Exception.InvalidInputArgument;
 
 public class JumpGameIII {
     public int[] nums = null;
-    int start;
+    public int start;
 
     public void getInputLength(int len){
         nums = new int[len];

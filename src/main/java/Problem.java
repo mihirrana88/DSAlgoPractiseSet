@@ -450,6 +450,44 @@ public class Problem {
         System.out.println("Output Space Complexity:- O(1)");
     }
 
+    public static void jumpGameIII(Scanner scanner) throws Exception {
+        System.out.println("Starting Jump Game III Problem...");
+        System.out.print("Provide length of input:- ");
+
+        int inputLength = scanner.nextInt();
+
+        System.out.print("Provide start point:- ");
+
+        int startPoint = scanner.nextInt();
+
+        JumpGameIII jumpGameIII = new JumpGameIII();
+        jumpGameIII.getInputLength(inputLength);
+        jumpGameIII.getWindowSize(startPoint);
+
+        System.out.print("Provide an input array:- ");
+        for(int i=0; i<inputLength; i++){
+            int num = scanner.nextInt();
+            jumpGameIII.acceptInput(num, i);
+        }
+
+        System.out.println();
+
+        System.out.print("Input is:- ");
+        for (int num : jumpGameIII.nums){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+        System.out.println("Given start point:- "+jumpGameIII.start);
+
+        System.out.println();
+
+        System.out.println("Output is:- "+jumpGameIII.canReach());
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(1)");
+    }
+
     public static void findContainerWithMaxWaterArray(Scanner scanner) throws Exception {
         System.out.println("Starting Container with max water Problem...");
         System.out.print("Provide length of input:- ");
