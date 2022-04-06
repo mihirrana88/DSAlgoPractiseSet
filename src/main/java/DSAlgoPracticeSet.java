@@ -21,7 +21,8 @@ public class DSAlgoPracticeSet {
         //Problem.sortColorsArrays(scanner);
         //Problem.findContainerWithMaxWaterArray(scanner);
         //Problem.isReachableToEndOfArray(scanner);
-        Problem.jumpGameII(scanner);
+        //Problem.jumpGameII(scanner);
+        Problem.jumpGameIII(scanner);
 
         // #Binary Search
         //Problem.searchInSortedRotatedArray(scanner);
