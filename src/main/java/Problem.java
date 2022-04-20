@@ -1,3 +1,4 @@
+import DS.Algorithm.Sorting.QuickSort;
 import DS.Arrays.*;
 import DS.BinarySearch.FindPeakElement;
 import DS.BinarySearch.SearchInRotatedSortedArray;
@@ -25,6 +26,42 @@ import DS.Tree.BinaryTree.*;
 import java.util.Scanner;
 
 public class Problem {
+
+    // Algorithms
+    public static void quickSort(Scanner scanner) throws Exception {
+        System.out.println("Starting QuickSort Problem...");
+        System.out.print("Provide length of input:- ");
+
+        int inputLength = scanner.nextInt();
+        QuickSort quickSort = new QuickSort();
+        quickSort.getInputLength(inputLength);
+
+        System.out.print("Provide an input array:- ");
+        for(int i=0; i<inputLength; i++){
+            int num = scanner.nextInt();
+            quickSort.acceptInput(num, i);
+        }
+
+        System.out.println();
+
+        System.out.print("Input is:- ");
+        for (int num : quickSort.nums){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+        System.out.print("Output is:- ");
+        for (int num : quickSort.quickSort()){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+        System.out.println("Output Time Complexity:- O(N^2)");
+        System.out.println("Output Space Complexity:- O(1)");
+    }
+
     public static void maxSumSubArray(Scanner scanner) throws Exception {
         System.out.println("Starting MaxSumSubArray Problem...");
         System.out.print("Provide length of input:- ");

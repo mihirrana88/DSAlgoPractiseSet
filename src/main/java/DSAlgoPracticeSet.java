@@ -6,6 +6,9 @@ public class DSAlgoPracticeSet {
         OutputDecorator.printDisplayHeading();
         Scanner scanner = new Scanner(System.in);
 
+        // #Algorithms ==> Sorting
+        Problem.quickSort(scanner);
+
         // #Arrays
         //Problem.maxSumSubArray(scanner);
         //Problem.majorityElementInArray(scanner);
@@ -22,7 +25,7 @@ public class DSAlgoPracticeSet {
         //Problem.findContainerWithMaxWaterArray(scanner);
         //Problem.isReachableToEndOfArray(scanner);
         //Problem.jumpGameII(scanner);
-        Problem.jumpGameIII(scanner);
+        //Problem.jumpGameIII(scanner);
 
         // #Binary Search
         //Problem.searchInSortedRotatedArray(scanner);
