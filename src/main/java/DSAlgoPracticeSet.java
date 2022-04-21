@@ -7,7 +7,8 @@ public class DSAlgoPracticeSet {
         Scanner scanner = new Scanner(System.in);
 
         // #Algorithms ==> Sorting
-        Problem.quickSort(scanner);
+        //Problem.quickSort(scanner);
+        Problem.mergeSort(scanner);
 
         // #Arrays
         //Problem.maxSumSubArray(scanner);

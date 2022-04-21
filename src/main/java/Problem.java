@@ -1,3 +1,4 @@
+import DS.Algorithm.Sorting.MergeSort;
 import DS.Algorithm.Sorting.QuickSort;
 import DS.Arrays.*;
 import DS.BinarySearch.FindPeakElement;
@@ -60,6 +61,40 @@ public class Problem {
 
         System.out.println("Output Time Complexity:- O(N^2)");
         System.out.println("Output Space Complexity:- O(1)");
+    }
+
+    public static void mergeSort(Scanner scanner) throws Exception {
+        System.out.println("Starting MergeSort Problem...");
+        System.out.print("Provide length of input:- ");
+
+        int inputLength = scanner.nextInt();
+        MergeSort mergeSort = new MergeSort();
+        mergeSort.getInputLength(inputLength);
+
+        System.out.print("Provide an input array:- ");
+        for(int i=0; i<inputLength; i++){
+            int num = scanner.nextInt();
+            mergeSort.acceptInput(num, i);
+        }
+
+        System.out.println();
+
+        System.out.print("Input is:- ");
+        for (int num : mergeSort.nums){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+        System.out.print("Output is:- ");
+        for (int num : mergeSort.mergeSort()){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+        System.out.println("Output Time Complexity:- O(NlogN)");
+        System.out.println("Output Space Complexity:- O(N)");
     }
 
     public static void maxSumSubArray(Scanner scanner) throws Exception {
