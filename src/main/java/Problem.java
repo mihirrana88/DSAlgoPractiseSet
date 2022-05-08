@@ -87,14 +87,14 @@ public class Problem {
         System.out.println();
 
         System.out.print("Output is:- ");
-        for (int num : mergeSort.mergeSort()){
+        for (int num : mergeSort.mergeSort2()){
             System.out.print(num+" ");
         }
 
         System.out.println();
 
         System.out.println("Output Time Complexity:- O(NlogN)");
-        System.out.println("Output Space Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(NlogN)");
     }
 
     public static void maxSumSubArray(Scanner scanner) throws Exception {
