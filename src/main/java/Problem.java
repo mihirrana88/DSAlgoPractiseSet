@@ -87,7 +87,7 @@ public class Problem {
         System.out.println();
 
         System.out.print("Output is:- ");
-        for (int num : mergeSort.mergeSort2()){
+        for (int num : mergeSort.mergeSort3()){
             System.out.print(num+" ");
         }
 

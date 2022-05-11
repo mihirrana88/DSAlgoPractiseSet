@@ -147,4 +147,58 @@ public class MergeSort {
             a[k] = b[k];
         }
     }
+
+    public int[] mergeSort3() throws Exception {
+        if(null == nums || nums.length == 0){
+            throw new InvalidInputArgument(nums);
+        }
+
+        mergeSort3(nums, 0, nums.length-1);
+        return nums;
+    }
+
+    public void mergeSort3(int[] a, int l, int r){
+        if(l < r){
+            int mid = l + (r-l)/2;
+            mergeSort3(a, l, mid);
+            mergeSort3(a, mid+1, r);
+            merge3(a, l, mid, r);
+        }
+    }
+
+    public void merge3(int[] a, int l, int mid, int r){
+        int[] b = new int[a.length];
+
+        int i = l;
+        int j = mid + 1;
+        int k = l;
+
+        while (i <= mid && j <= r){
+            if (a[i] < a[j]){
+                b[k] = a[i];
+                i++;
+            }else {
+                b[k] = a[j];
+                j++;
+            }
+            k++;
+        }
+
+        while(i<=mid){
+            b[k] = a[i];
+            k++;
+            i++;
+        }
+
+        while (j<=r){
+            b[k] = a[j];
+            k++;
+            j++;
+        }
+
+        for(k=l; k<=r; k++){
+            a[k] = b[k];
+        }
+    }
+
 }
