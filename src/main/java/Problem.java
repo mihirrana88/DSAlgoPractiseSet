@@ -284,6 +284,35 @@ public class Problem {
         System.out.println("Output Space Complexity:- O(N)");
     }
 
+    public static void longestConsecutiveSequence(Scanner scanner) throws Exception {
+        System.out.println("Starting Longest Consecutive Sequence Problem...");
+        System.out.print("Provide length of input:- ");
+
+        int inputLength = scanner.nextInt();
+        LongestConsecutiveSequence longestConsecutiveSequence = new LongestConsecutiveSequence();
+        longestConsecutiveSequence.getInputLength(inputLength);
+
+        System.out.print("Provide an input array:- ");
+        for(int i=0; i<inputLength; i++){
+            int num = scanner.nextInt();
+            longestConsecutiveSequence.acceptInput(num, i);
+        }
+
+        System.out.println();
+
+        System.out.print("Input is:- ");
+        for (int num : longestConsecutiveSequence.nums){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+
+        System.out.print("Output is:- "+longestConsecutiveSequence.longestConsecutiveSequence());
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(N)");
+    }
+
     public static void rainWaterTrapping(Scanner scanner) throws Exception {
         System.out.println("Starting Rainwater Trapping Problem...");
         System.out.print("Provide length of input:- ");

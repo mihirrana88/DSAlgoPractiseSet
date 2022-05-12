@@ -8,7 +8,7 @@ public class DSAlgoPracticeSet {
 
         // #Algorithms ==> Sorting
         //Problem.quickSort(scanner);
-        Problem.mergeSort(scanner);
+        //Problem.mergeSort(scanner);
 
         // #Arrays
         //Problem.maxSumSubArray(scanner);
@@ -27,6 +27,7 @@ public class DSAlgoPracticeSet {
         //Problem.isReachableToEndOfArray(scanner);
         //Problem.jumpGameII(scanner);
         //Problem.jumpGameIII(scanner);
+        Problem.longestConsecutiveSequence(scanner);
 
         // #Binary Search
         //Problem.searchInSortedRotatedArray(scanner);
