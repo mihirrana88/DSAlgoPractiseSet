@@ -75,7 +75,7 @@ public class SpiralMatrix {
         return spiral;
     }
 
-    public int[] spiralOrder2() throws Exception {
+    public List<Integer> spiralOrder2() throws Exception {
         if(null == matrix || matrix.length == 0){
             throw new InvalidInputArgument(matrix);
         }
@@ -117,5 +117,7 @@ public class SpiralMatrix {
                 break;
             }
         }
+
+        return spiralOrderList;
     }
 }
