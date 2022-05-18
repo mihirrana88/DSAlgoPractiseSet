@@ -2,6 +2,9 @@ package DS.Matrix;
 
 import Exception.InvalidInputArgument;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class SpiralMatrix {
     int[][] matrix = null;
 
@@ -21,13 +24,13 @@ public class SpiralMatrix {
             throw new InvalidInputArgument(matrix);
         }
 
-        int[] spiral = new int[matrix.length];
-        int cursor = 0;
-
         int rowBegin=0;
         int rowEnd=matrix.length-1;
         int colBegin=0;
         int colEnd=matrix[0].length-1;
+
+        int[] spiral = new int[rowEnd*colEnd];
+        int cursor = 0;
 
         if(matrix.length==0)
             return spiral;
@@ -70,5 +73,49 @@ public class SpiralMatrix {
         }
 
         return spiral;
+    }
+
+    public int[] spiralOrder2() throws Exception {
+        if(null == matrix || matrix.length == 0){
+            throw new InvalidInputArgument(matrix);
+        }
+
+        int rowStart = 0;
+        int rowEnd = matrix.length - 1;
+        int columnStart = 0;
+        int columnEnd = matrix[0].length - 1;
+
+        List<Integer> spiralOrderList = new ArrayList<>();
+
+        while (true){
+            for (int i=columnStart; i<=columnEnd; i++){
+                spiralOrderList.add(matrix[rowStart][i]);
+            }
+            rowStart++;
+            if (rowStart > rowEnd){
+                break;
+            }
+            for (int i=rowStart; i<=rowEnd; i++){
+                spiralOrderList.add(matrix[i][columnEnd]);
+            }
+            columnEnd--;
+            if (columnStart > columnEnd){
+                break;
+            }
+            for (int i=columnEnd; i>=columnStart; i--){
+                spiralOrderList.add(matrix[rowEnd][i]);
+            }
+            rowEnd--;
+            if (rowStart > rowEnd){
+                break;
+            }
+            for (int i=rowEnd; i>=rowStart; i--){
+                spiralOrderList.add(matrix[i][columnStart]);
+            }
+            columnStart++;
+            if(columnStart > columnEnd){
+                break;
+            }
+        }
     }
 }
