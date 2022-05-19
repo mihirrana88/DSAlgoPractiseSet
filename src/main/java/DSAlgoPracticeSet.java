@@ -1,3 +1,5 @@
+import DS.Matrix.SimpleTest;
+
 import java.lang.*;
 import java.util.*;
 
@@ -5,6 +7,9 @@ public class DSAlgoPracticeSet {
     public static void main(String[] args) throws Exception {
         OutputDecorator.printDisplayHeading();
         Scanner scanner = new Scanner(System.in);
+
+        SimpleTest simpleTest = new SimpleTest();
+        simpleTest.updateMap();
 
         // #Algorithms ==> Sorting
         //Problem.quickSort(scanner);
@@ -27,7 +32,7 @@ public class DSAlgoPracticeSet {
         //Problem.isReachableToEndOfArray(scanner);
         //Problem.jumpGameII(scanner);
         //Problem.jumpGameIII(scanner);
-        Problem.longestConsecutiveSequence(scanner);
+        //Problem.longestConsecutiveSequence(scanner);
 
         // #Binary Search
         //Problem.searchInSortedRotatedArray(scanner);
