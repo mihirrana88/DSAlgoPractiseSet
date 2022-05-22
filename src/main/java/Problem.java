@@ -13,6 +13,8 @@ import DS.DynamicProgramming.GenerateParentheses;
 import DS.HashMap.DistinctCountInKSizeWindow;
 import DS.HashMap.TopKFrequentElement;
 import DS.Maths.*;
+import DS.Matrix.SpiralMatrix;
+import DS.Matrix.SpiralMatrixII;
 import DS.Queue.MaximumSumCircularSubarray;
 import DS.Queue.RemoveDuplicateLetters;
 import DS.Recursion.JosephusProblem;
@@ -95,6 +97,70 @@ public class Problem {
 
         System.out.println("Output Time Complexity:- O(NlogN)");
         System.out.println("Output Space Complexity:- O(NlogN)");
+    }
+
+    public static void spiralMatrix(Scanner scanner) throws Exception {
+        System.out.println("Starting Spiral Matrix Problem...");
+
+        System.out.print("Provide number of rows:- ");
+
+        int rows = scanner.nextInt();
+
+        System.out.print("Provide number of columns:- ");
+
+        int columns = scanner.nextInt();
+
+        SpiralMatrix spiralMatrix = new SpiralMatrix();
+        spiralMatrix.getInputLength(rows, columns);
+
+        System.out.println();
+
+        System.out.println("Input is:- ");
+        for(int i=0; i<rows; i++){
+            for (int j=0; j<columns; j++){
+                int num = scanner.nextInt();
+                spiralMatrix.acceptInput(num, i, j);
+                System.out.println("num: "+num+" i: "+i+" j: "+j);
+            }
+        }
+
+        System.out.println();
+
+        System.out.print("Output is:- ");
+        for (int num : spiralMatrix.spiralOrder()){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+        System.out.println("Output Time Complexity:- O(N^2)");
+        System.out.println("Output Space Complexity:- O(1)");
+    }
+
+    public static void spiralMatrixII(Scanner scanner) throws Exception {
+        System.out.println("Starting Spiral Matrix II Problem...");
+        System.out.print("Provide length of input:- ");
+
+        int inputNumber = scanner.nextInt();
+        SpiralMatrixII spiralMatrixII = new SpiralMatrixII();
+        spiralMatrixII.getInputNumber(inputNumber);
+
+        System.out.print("Input is:- "+spiralMatrixII.n);
+
+        System.out.println();
+
+        System.out.println("Output is:- ");
+        for(int[] i : spiralMatrixII.generateMatrix2()){
+            for (int j : i){
+                System.out.print(j+" ");
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+
+        System.out.println("Output Time Complexity:- O(N^2)");
+        System.out.println("Output Space Complexity:- O(1)");
     }
 
     public static void maxSumSubArray(Scanner scanner) throws Exception {

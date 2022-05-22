@@ -29,7 +29,7 @@ public class SpiralMatrix {
         int colBegin=0;
         int colEnd=matrix[0].length-1;
 
-        int[] spiral = new int[rowEnd*colEnd];
+        int[] spiral = new int[matrix.length*matrix[0].length];
         int cursor = 0;
 
         if(matrix.length==0)
@@ -59,6 +59,7 @@ public class SpiralMatrix {
             for(int i=colEnd;i>=colBegin;i--)
             {
                 spiral[cursor] = matrix[rowEnd][i];
+                cursor++;
             }
             rowEnd--;
             if(rowBegin > rowEnd ) break;
@@ -67,6 +68,7 @@ public class SpiralMatrix {
             for(int i=rowEnd;i>=rowBegin;i--)
             {
                 spiral[cursor] = matrix[i][colBegin];
+                cursor++;
             }
             colBegin++;
             if(colBegin >  colEnd) break;

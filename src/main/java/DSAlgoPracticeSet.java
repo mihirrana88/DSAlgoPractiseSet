@@ -1,4 +1,5 @@
 import DS.Matrix.SimpleTest;
+import DS.Matrix.SpiralMatrixII;
 
 import java.lang.*;
 import java.util.*;
@@ -7,9 +8,6 @@ public class DSAlgoPracticeSet {
     public static void main(String[] args) throws Exception {
         OutputDecorator.printDisplayHeading();
         Scanner scanner = new Scanner(System.in);
-
-        SimpleTest simpleTest = new SimpleTest();
-        simpleTest.updateMap();
 
         // #Algorithms ==> Sorting
         //Problem.quickSort(scanner);
@@ -62,6 +60,10 @@ public class DSAlgoPracticeSet {
         //Problem.findPerfectSquareInputNumber(scanner);
         //Problem.findPowerXIsToN(scanner);
         //Problem.findFactorialTrailingZeroes(scanner);
+
+        // # Matrix
+        //Problem.spiralMatrix(scanner);
+        Problem.spiralMatrixII(scanner);
 
         // Queue
         //Problem.maximumSumCircularSubarray(scanner);
