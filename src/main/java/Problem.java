@@ -1268,6 +1268,24 @@ public class Problem {
         System.out.println("Output Space Complexity:- O(N)");
     }
 
+    public static void longestValidParentheses(Scanner scanner) throws Exception {
+        System.out.println("Starting Longest Valid Parentheses Problem...");
+        System.out.println();
+        System.out.print("Provide a input String:- ");
+        String inputString = scanner.nextLine();
+        System.out.println();
+
+        LongestValidParentheses longestSubstring = new LongestValidParentheses();
+        longestSubstring.acceptInputString(inputString);
+
+        System.out.println();
+        System.out.println();
+
+        System.out.println("Output:- "+longestSubstring.longestValidParentheses());
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(1)");
+    }
+
     public static void isValidParentheses(Scanner scanner) throws Exception {
         System.out.println("Starting Valid Parentheses Problem...");
         System.out.println();
