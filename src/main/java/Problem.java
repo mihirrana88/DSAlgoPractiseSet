@@ -683,6 +683,34 @@ public class Problem {
         System.out.println("Output Space Complexity:- O(1)");
     }
 
+    public static void maxFruitIntoBasket(Scanner scanner) throws Exception {
+        System.out.println("Starting Fruit Into Baskets Problem...");
+        System.out.print("Provide length of input:- ");
+
+        int inputLength = scanner.nextInt();
+        FruitIntoBaskets fruitIntoBaskets = new FruitIntoBaskets();
+        fruitIntoBaskets.getInputLength(inputLength);
+
+        System.out.print("Provide an input array:- ");
+        for(int i=0; i<inputLength; i++){
+            int num = scanner.nextInt();
+            fruitIntoBaskets.acceptInput(num, i);
+        }
+
+        System.out.println();
+
+        System.out.print("Input is:- ");
+        for (int num : fruitIntoBaskets.nums){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+        System.out.println("Output is:- "+fruitIntoBaskets.totalFruit());
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(1)");
+    }
+
     public static void findSingleNonRepeatedNumberFromArray(Scanner scanner) throws Exception {
         System.out.println("Starting find single non repeated number Problem...");
         System.out.print("Provide length of input:- ");
