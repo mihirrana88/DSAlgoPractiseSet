@@ -31,7 +31,7 @@ public class DSAlgoPracticeSet {
         //Problem.jumpGameII(scanner);
         //Problem.jumpGameIII(scanner);
         //Problem.longestConsecutiveSequence(scanner);
-        Problem.maxFruitIntoBasket(scanner);
+        //Problem.maxFruitIntoBasket(scanner);
 
         // #Binary Search
         //Problem.searchInSortedRotatedArray(scanner);
@@ -91,6 +91,7 @@ public class DSAlgoPracticeSet {
         //Problem.minimumWindowSubstring(scanner);
         //Problem.stringToInteger(scanner);
         //Problem.longestValidParentheses(scanner);
+        Problem.longestHappyPrefix(scanner);
 
         // #Trees ==> BinaryTree
         //Problem.preOrderTraversalOfBinaryTree(scanner);

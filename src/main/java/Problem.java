@@ -1296,6 +1296,24 @@ public class Problem {
         System.out.println("Output Space Complexity:- O(N)");
     }
 
+    public static void longestHappyPrefix(Scanner scanner) throws Exception {
+        System.out.println("Starting Longest Happy Prefix Problem...");
+        System.out.println();
+        System.out.print("Provide a input String:- ");
+        String inputString = scanner.nextLine();
+        System.out.println();
+
+        LongestHappyPrefix longestHappyPrefix = new LongestHappyPrefix();
+        longestHappyPrefix.acceptInputString(inputString);
+
+        System.out.println();
+        System.out.println();
+
+        System.out.println("Output:- "+longestHappyPrefix.longestPrefix());
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(N)");
+    }
+
     public static void longestValidParentheses(Scanner scanner) throws Exception {
         System.out.println("Starting Longest Valid Parentheses Problem...");
         System.out.println();
