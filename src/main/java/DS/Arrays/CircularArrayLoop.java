@@ -1,5 +1,7 @@
 package DS.Arrays;
 
+import Exception.InvalidInputArgument;
+
 public class CircularArrayLoop {
     public int[] nums = null;
 
@@ -14,7 +16,12 @@ public class CircularArrayLoop {
         nums[index] = num;
     }
 
-    public boolean circularArrayLoop(int[] nums) {
+    public boolean circularArrayLoop() throws Exception {
+
+        if(null == nums || nums.length == 0){
+            throw new InvalidInputArgument(nums);
+        }
+
         for (int i = 0; i < nums.length; i++) {
             float direction = Math.signum(nums[i]);
             int slow = i;
