@@ -16,7 +16,11 @@ public class WhereWillTheBallFall {
         grid[row][column] = num;
     }
 
-    public int[] findBall() {
+    public int[] findBall() throws Exception {
+        if(null == grid || grid.length == 0){
+            throw new InvalidInputArgument(grid);
+        }
+
         int[] ans=new int[grid[0].length];
         for(int i=0;i<ans.length;i++)
         {
@@ -24,8 +28,8 @@ public class WhereWillTheBallFall {
         }
         return ans;
     }
-    public int find(int i,int j,int[][] g,int n,int m)
-    {
+
+    private int find(int i,int j,int[][] g,int n,int m) {
 
         if(g[i][j]==1)
         {
