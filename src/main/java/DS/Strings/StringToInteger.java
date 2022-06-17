@@ -129,4 +129,34 @@ public class StringToInteger {
         return sign * result;
     }
 
+    public int atoi2(){
+        int sign = 1;
+        int index = 0;
+        int result = 0;
+        int n = inputString.length();
+
+        while (index < n && inputString.charAt(index) == ' '){
+            index++;
+        }
+
+        if(index < n && inputString.charAt(index) == '+'){
+            index++;
+        }else if (index < n && inputString.charAt(index) == '-'){
+            sign = -1;
+            index++;
+        }
+
+        while (index < n && Character.isDigit(inputString.charAt(index))){
+            int digit = inputString.charAt(index) - '0';
+
+            if ((result > Integer.MAX_VALUE/10) ||
+                    (result == Integer.MAX_VALUE/10 && digit > Integer.MAX_VALUE%10)){
+                return sign == 1 ? Integer.MAX_VALUE : Integer.MIN_VALUE;
+            }
+
+            result = result * 10 + digit;
+        }
+
+        return sign * result;
+    }
 }
