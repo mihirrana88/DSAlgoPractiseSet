@@ -191,6 +191,34 @@ public class Problem {
         System.out.println("Output Space Complexity:- O(1)");
     }
 
+    public static void specialSequenceArray(Scanner scanner) throws Exception {
+        System.out.println("Starting Special Sequence Array Problem...");
+        System.out.print("Provide length of input:- ");
+
+        int inputLength = scanner.nextInt();
+        SpecialSequence specialSequence = new SpecialSequence();
+        specialSequence.getInputLength(inputLength);
+
+        System.out.print("Provide an input array:- ");
+        for(int i=0; i<inputLength; i++){
+            int num = scanner.nextInt();
+            specialSequence.acceptInput(num, i);
+        }
+
+        System.out.println();
+
+        System.out.print("Input is:- ");
+        for (int num : specialSequence.nums){
+            System.out.print(num+" ");
+        }
+
+        System.out.println();
+
+        System.out.println("Output is:- "+specialSequence.isSpecialSequence());
+        System.out.println("Output Time Complexity:- O(N)");
+        System.out.println("Output Space Complexity:- O(1)");
+    }
+
     public static void majorityElementInArray(Scanner scanner) throws Exception {
         System.out.println("Starting MajorityElementInArray Problem...");
         System.out.print("Provide length of input:- ");

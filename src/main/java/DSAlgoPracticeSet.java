@@ -34,6 +34,7 @@ public class DSAlgoPracticeSet {
         //Problem.jumpGameIII(scanner);
         //Problem.longestConsecutiveSequence(scanner);
         //Problem.maxFruitIntoBasket(scanner);
+        Problem.specialSequenceArray(scanner);
 
         // #Binary Search
         //Problem.searchInSortedRotatedArray(scanner);
