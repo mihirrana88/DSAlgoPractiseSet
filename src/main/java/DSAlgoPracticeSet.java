@@ -1,15 +1,37 @@
-import DS.Matrix.SimpleTest;
-import DS.Matrix.SpiralMatrixII;
-import Test.Coordinate;
+import Consumer.MessageConsumer;
+import Producer.MessageProducer;
 
 import java.lang.*;
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class DSAlgoPracticeSet {
     public static void main(String[] args) throws Exception {
         OutputDecorator.printDisplayHeading();
         Scanner scanner = new Scanner(System.in);
+
+
+        Queue<String> queue = new LinkedList<>();
+        List<String> emails = new ArrayList<>();
+
+        emails.add("mihir@gmail.com");
+        emails.add("pankaj@gmail.com");
+
+        MessageProducer messageProducer = new MessageProducer();
+        messageProducer.produceMessage(queue, "blue");
+        messageProducer.produceMessage(queue, "red flag");
+        messageProducer.produceMessage(queue, "green");
+        messageProducer.produceMessage(queue, "red");
+
+
+        MessageConsumer consumer = new MessageConsumer();
+
+        while (!queue.isEmpty()) {
+            consumer.consumeMessage(queue, emails);
+        }
+
+
+
+        //-----------------------------------------------------------
 
         // #Algorithms ==> Sorting
         //Problem.quickSort(scanner);
@@ -34,7 +56,7 @@ public class DSAlgoPracticeSet {
         //Problem.jumpGameIII(scanner);
         //Problem.longestConsecutiveSequence(scanner);
         //Problem.maxFruitIntoBasket(scanner);
-        Problem.specialSequenceArray(scanner);
+        //Problem.specialSequenceArray(scanner);
 
         // #Binary Search
         //Problem.searchInSortedRotatedArray(scanner);
