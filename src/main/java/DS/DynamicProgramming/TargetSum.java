@@ -2,6 +2,8 @@ package DS.DynamicProgramming;
 
 import Exception.InvalidInputArgument;
 
+import java.util.Arrays;
+
 /*
 Target Sum
 
@@ -27,7 +29,7 @@ Explanation: There are 5 ways to assign symbols to make the sum of nums be targe
 Example 2:
 Input: nums = [1], target = 1
 Output: 1
- 
+
 Constraints:
 
 1 <= nums.length <= 20
@@ -84,5 +86,28 @@ public class TargetSum {
         int sub=solUtil(nums,target-nums[index],index-1);
 
         return add+sub;
+    }
+
+    public int findTargetSumWays2() throws Exception {
+        if(null == nums || nums.length == 0){
+            throw new InvalidInputArgument(nums);
+        }
+        int total = Arrays.stream(nums).sum();
+        int[] dp = new int[2 * total + 1];
+        dp[nums[0] + total] = 1;
+        dp[-nums[0] + total] += 1;
+
+        for (int i = 1; i < nums.length; i++) {
+            int[] next = new int[2 * total + 1];
+            for (int sum = -total; sum <= total; sum++) {
+                if (dp[sum + total] > 0) {
+                    next[sum + nums[i] + total] += dp[sum + total];
+                    next[sum - nums[i] + total] += dp[sum + total];
+                }
+            }
+            dp = next;
+        }
+
+        return Math.abs(target) > total ? 0 : dp[target + total];
     }
 }
