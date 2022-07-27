@@ -1,7 +1,9 @@
 package Exception;
 
 import DS.Tree.BinaryTree.BinaryTree;
+import DS.Tree.BinaryTree.BinarySearchTree.BinarySearchTree;
 import DS.Tree.BinaryTree.TreeNode;
+import DS.Tree.BinaryTree.BinarySearchTree.BSTNode;
 
 public class InvalidInputArgument extends Exception {
     public InvalidInputArgument(int[] input) throws Exception {
@@ -61,6 +63,18 @@ public class InvalidInputArgument extends Exception {
     public InvalidInputArgument(TreeNode input) throws Exception {
         if (null == input){
             throw new Exception("InvalidInputArgument, input TreeNode=null");
+        }
+    }
+
+    public InvalidInputArgument(BinarySearchTree input) throws Exception {
+        if (null == input){
+            throw new Exception("InvalidInputArgument, input BinarySearchTree=null");
+        }
+    }
+
+    public InvalidInputArgument(BSTNode input) throws Exception {
+        if (null == input){
+            throw new Exception("InvalidInputArgument, input TreeSearchNode=null");
         }
     }
 }
