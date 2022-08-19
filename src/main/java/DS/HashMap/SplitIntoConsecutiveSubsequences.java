@@ -40,7 +40,7 @@ Example 3:
 Input: nums = [1,2,3,4,4,5]
 Output: false
 Explanation: It is impossible to split nums into consecutive increasing subsequences of length 3 or more.
- 
+
 Constraints:
 
 1 <= nums.length <= 104
