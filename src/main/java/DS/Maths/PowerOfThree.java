@@ -54,4 +54,28 @@ public class PowerOfThree {
 
         return n == 1;
     }
+
+    public boolean isPowerOfThreeV3(){
+        return isPowerOfThreeV3(n);
+    }
+
+    public boolean isPowerOfThreeV3(int n) {
+        if(n == 1){
+            return true;
+        }
+
+        if(n < 3){
+            return false;
+        }
+
+        if(n%3 == 0){
+            n = n/3;
+            if(n==1){
+                return true;
+            }
+            return isPowerOfThreeV3(n);
+        }else{
+            return false;
+        }
+    }
 }
