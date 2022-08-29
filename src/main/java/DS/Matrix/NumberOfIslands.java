@@ -81,4 +81,50 @@ public class NumberOfIslands {
         return;
     }
 
+    public int numberOfIsland(){
+        if(null == grid || grid.length == 0){
+            return 0;
+        }
+
+        int rows = grid.length;
+        int columns = grid[0].length;
+
+        int numberOfIsland = 0;
+
+        for(int i=0; i<rows; i++){
+            for(int j=0; j<columns; j++){
+                if(grid[i][j] == '1'){
+                    numberOfIsland += 1;
+                    markAsIsland(grid, i, j, rows, columns);
+                }
+            }
+        }
+
+        return numberOfIsland;
+    }
+
+    private void markAsIsland(char[][] grid, int i, int j, int rows, int columns){
+        if(grid[i][j] == '0'){
+            return;
+        }
+
+        grid[i][j] = '0';
+
+        if(i-1 >= 0){
+            //move up
+            markAsIsland(grid, i-1, j, rows, columns);
+        }
+        if(i+1 < rows){
+            //move down
+            markAsIsland(grid, i+1, j, rows, columns);
+        }
+        if(j-1 >= 0){
+            //move left
+            markAsIsland(grid, i, j-1, rows, columns);
+        }
+        if(j+1 < columns){
+            //move right
+            markAsIsland(grid, i, j+1, rows, columns);
+        }
+    }
 }
