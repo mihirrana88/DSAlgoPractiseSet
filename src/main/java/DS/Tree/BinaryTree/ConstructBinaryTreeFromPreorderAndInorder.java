@@ -16,7 +16,7 @@ Output: [3,9,20,null,null,15,7]
 Example 2:
 Input: preorder = [-1], inorder = [-1]
 Output: [-1]
- 
+
 Constraints:
 
 1 <= preorder.length <= 3000
