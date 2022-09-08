@@ -27,6 +27,7 @@ Output: [1,1,0,1,1,null,1]
 
 Constraints:
 
+
 The number of nodes in the tree is in the range [1, 200].
 Node.val is either 0 or 1.
 
