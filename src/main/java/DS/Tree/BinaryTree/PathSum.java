@@ -51,7 +51,7 @@ public class PathSum {
         }
         this.binaryTreeInput = binaryTreeInput;
     }
-    
+
     public boolean hasPathSum(){
         return hasPathSum(binaryTreeInput.root, targetSum);
     }
