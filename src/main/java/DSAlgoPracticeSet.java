@@ -1,4 +1,5 @@
 import Consumer.MessageConsumer;
+import DS.Arrays.NetTest;
 import Producer.MessageProducer;
 
 import java.lang.*;
@@ -6,9 +7,9 @@ import java.util.*;
 
 public class DSAlgoPracticeSet {
     public static void main(String[] args) throws Exception {
+
         OutputDecorator.printDisplayHeading();
         Scanner scanner = new Scanner(System.in);
-
 
         Queue<String> queue = new LinkedList<>();
         List<String> emails = new ArrayList<>();
@@ -22,14 +23,11 @@ public class DSAlgoPracticeSet {
         messageProducer.produceMessage(queue, "green");
         messageProducer.produceMessage(queue, "red");
 
-
         MessageConsumer consumer = new MessageConsumer();
 
         while (!queue.isEmpty()) {
             consumer.consumeMessage(queue, emails);
         }
-
-
 
         //-----------------------------------------------------------
 
