@@ -14,7 +14,6 @@ public class SingletonTS2 {
                 }
             }
         }
-
         return singletonTS2;
     }
 }
