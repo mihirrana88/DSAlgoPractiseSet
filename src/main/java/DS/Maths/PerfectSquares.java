@@ -76,7 +76,7 @@ public class PerfectSquares {
           can have upto the given number n.
         * Then it becomes a coin-change problem. We need to pick the least amount of values that can
           form our number n.
- 
+
     * */
     public int numSquaresv3() {
         List<Integer> squares = new ArrayList<>();
