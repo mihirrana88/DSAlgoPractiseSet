@@ -1,5 +1,6 @@
 import Consumer.MessageConsumer;
 import DS.Arrays.MergeKSortedList;
+import DS.Trie2.TrieNode;
 import Producer.MessageProducer;
 
 import java.lang.*;
@@ -130,5 +131,36 @@ public class DSAlgoPracticeSet {
         //Problem.rightViewOfBinaryTree(scanner);
         //Problem.topViewOfBinaryTree(scanner);
         //Problem.bottomViewOfBinaryTree(scanner);
+
+        // #Trie
+        //TrieNode trie  = new TrieNode();
+        //trie.insert(trie, "apple");
+        //trie.insert(trie, "app");
+        //trie.insert(trie, "apply");
+        //trie.insert(trie, "application");
+        //trie.insert(trie, "basic");
+        //trie.insert(trie, "basically");
+
+        //trie.wordsStartsWith(trie, "app");
+
+        //System.out.println(trie.search(trie,"apple"));
+        //System.out.println(trie.search(trie,"ale"));
+        //System.out.println(trie.search(trie,"app"));
+        //System.out.println(trie.search(trie,"appli"));
+        //System.out.println(trie.search(trie,"application"));
+        //System.out.println(trie.search(trie,"basic"));
+        //System.out.println(trie.search(trie,"basically"));
+        //System.out.println(trie.search(trie,"apply"));
+
+
+
+        //int[][]  intervals = {{4, 7}, {8, 9}, {2, 3}, {1, 2}};
+        //Arrays.sort(intervals, (a, b) -> a[0] == b[0] ? a[1] - b[1] : a[0] - b[0]);
+        //System.out.println(intervals[0]);
+        //int[] prev = intervals[0];
+        //for(int i=0; i<prev.length; i++){
+        //    System.out.println(prev[i]);
+        //}
+
     }
 }
