@@ -1,7 +1,7 @@
 package DS.Strings;
 
+import DS.Pair;
 import Exception.InvalidInputArgument;
-import javafx.util.Pair;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -94,7 +94,7 @@ public class MinimumWindowSubstring {
         // This helps to reduce our search.
         // Hence, we follow the sliding window approach on as small list.
         while (r < filteredS.size()) {
-            char c = filteredS.get(r).getValue();
+            char c = filteredS.get(r).second;
             int count = windowCounts.getOrDefault(c, 0);
             windowCounts.put(c, count + 1);
 
@@ -104,11 +104,11 @@ public class MinimumWindowSubstring {
 
             // Try and contract the window till the point where it ceases to be 'desirable'.
             while (l <= r && formed == required) {
-                c = filteredS.get(l).getValue();
+                c = filteredS.get(l).second;
 
                 // Save the smallest window until now.
-                int end = filteredS.get(r).getKey();
-                int start = filteredS.get(l).getKey();
+                int end = filteredS.get(r).first;
+                int start = filteredS.get(l).first;
                 if (ans[0] == -1 || end - start + 1 < ans[0]) {
                     ans[0] = end - start + 1;
                     ans[1] = start;

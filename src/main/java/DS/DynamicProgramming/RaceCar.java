@@ -1,7 +1,8 @@
 package DS.DynamicProgramming;
 
+import DS.Pair;
 import Exception.InvalidInputArgument;
-import javafx.util.Pair;
+
 
 import java.util.HashSet;
 import java.util.LinkedList;
@@ -59,6 +60,8 @@ public class RaceCar {
 
     public int racecar() {
 
+
+
         Queue<Pair<Integer, Integer>> queue = new LinkedList<>();
         HashSet<Pair<Integer, Integer>> visited = new HashSet<>();
 
@@ -71,8 +74,8 @@ public class RaceCar {
 
             for(int i=0;i<size;i++){
                 Pair<Integer, Integer> node = queue.poll();
-                int position = node.getKey();
-                int speed = node.getValue();
+                int position = node.first;
+                int speed = node.second;
 
                 //once we hit target, return instructions count
                 if(position == target){

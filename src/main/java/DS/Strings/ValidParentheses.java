@@ -70,4 +70,19 @@ public class ValidParentheses {
 
         return stack.isEmpty();
     }
+    /*
+    * {()} ==> })
+    *
+    * */
+    public boolean validParentheses(String input) {
+        Stack<Character> stack = new Stack<>();
+        for(int i=0; i<input.length(); i++){
+            if(input.charAt(i) == '{') {stack.push('}');}
+            else if(input.charAt(i) == '(') {stack.push(')');}
+            else if(input.charAt(i) == '[') {stack.push(']');}
+            else if(input.charAt(i) == stack.peek()){stack.pop();}
+            else {return false;}
+        }
+        return stack.isEmpty();
+    }
 }

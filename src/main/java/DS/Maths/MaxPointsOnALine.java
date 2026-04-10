@@ -1,6 +1,8 @@
 package DS.Maths;
 
-import javafx.util.Pair;
+
+
+import DS.Pair;
 
 import java.math.BigInteger;
 import java.util.HashMap;
@@ -112,8 +114,8 @@ public class MaxPointsOnALine {
         // and the number of duplicates of point i.
         for (int j = i + 1; j < n; j++) {
             Pair<Integer, Integer> p = add_line(i, j, count, duplicates);
-            count = p.getKey();
-            duplicates = p.getValue();
+            count = p.first;
+            duplicates = p.second;
         }
         return count + duplicates;
     }

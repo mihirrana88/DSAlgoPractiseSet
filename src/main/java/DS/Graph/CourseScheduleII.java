@@ -119,4 +119,49 @@ public class CourseScheduleII {
 
         return new int[0];
     }
+
+    /* ------------------------------------------------------------------- */
+    /* ---------------------- Topological Sort --------------------------- */
+    /* ------------------------------------------------------------------- */
+    /* Below code is much easier way to understand instead of color coding */
+    /* ------------------------------------------------------------------- */
+
+    public int[] findOrder(int numCourses, int[][] prerequisites) {
+        List<Integer> ansTopo=new ArrayList<>();
+        List<Integer>[] adj = new ArrayList[numCourses];
+        int[] visited = new int[numCourses];
+        int[] recStack = new int[numCourses];
+        for(int i=0; i<numCourses; i++){
+            adj[i] = new ArrayList<>();
+        }
+        for(int[] pre : prerequisites){
+            adj[pre[1]].add(pre[0]);
+        }
+        for(int i=0; i<numCourses; i++){
+            if(visited[i]==0 && isCycleDetected(i, adj, visited, recStack, ansTopo)){
+                return new int[0];
+            }
+        }
+
+        int index=0;
+        int[]ans=new int[ansTopo.size()];
+        for(int i=ansTopo.size()-1;i>=0;i--){
+            ans[index]=ansTopo.get(i);
+            index++;
+        }
+        return ans;
+    }
+
+    public boolean isCycleDetected(int node, List<Integer>[] adj, int[] visited, int[] recStack, List<Integer> ansTopo){
+        visited[node] = 1;
+        recStack[node] = 1;
+        for(int  neighbour : adj[node]){
+            if(visited[neighbour]==0 && isCycleDetected(neighbour,adj,visited,recStack,ansTopo)){
+                return true;
+            }else if(recStack[neighbour]==1)return true;
+        }
+        recStack[node] = 0;
+        ansTopo.add(node);
+        return false;
+    }
 }

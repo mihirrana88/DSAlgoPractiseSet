@@ -87,4 +87,43 @@ public class CourseSchedule {
         colors[node] = BLACK;
         return false;
     }
+
+    /* ------------------------------------------------------------------- */
+    /* Below code is much easier way to understand instead of color coding */
+    /* ------------------------------------------------------------------- */
+
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
+        if(prerequisites.length == 0){
+            return true;
+        }
+        List<Integer>[] adj = new ArrayList[numCourses];
+        boolean[] visited = new boolean[numCourses];
+        boolean[] recStack = new boolean[numCourses];
+        for(int i=0; i<numCourses; i++){
+            adj[i] = new ArrayList<>();
+        }
+        for(int[] pre : prerequisites){
+            adj[pre[1]].add(pre[0]);
+        }
+        for(int i=0; i<numCourses; i++){
+            if(!visited[i] && isCycleDetected(i, adj, visited, recStack)){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public boolean isCycleDetected(int node, List<Integer>[] adj, boolean[] visited, boolean[] recStack){
+        if(recStack[node]) return true;
+        if(visited[node]) return false;
+        visited[node] = true;
+        recStack[node] = true;
+        for(int  neighbour : adj[node]){
+            if(isCycleDetected(neighbour, adj, visited, recStack)){
+                return true;
+            }
+        }
+        recStack[node] = false;
+        return false;
+    }
 }

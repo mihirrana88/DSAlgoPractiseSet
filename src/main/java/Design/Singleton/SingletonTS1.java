@@ -6,7 +6,7 @@ public class SingletonTS1 {
 
     private SingletonTS1(){}
 
-    public synchronized static SingletonTS1 getInstance(){
+    public static synchronized SingletonTS1 getInstance(){
         if(null == singletonTS1){
             singletonTS1 = new SingletonTS1();
         }
